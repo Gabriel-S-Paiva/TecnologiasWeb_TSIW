@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transitions - exemplo - rollover</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#exemplo1 {
+	width: 200px;
+	height: 150px;
+}
+#exemplo1 img {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;				
+}
+#imagem1 {
+	position: absolute;
+}
+#imagem1, #exemplo1:hover #imagem2 {
+	opacity: 1.0;
+}
+#exemplo1:hover #imagem1, #imagem2 {
+	opacity: 0;	
+}
+</style>
+</head>
+<body>
+<h1>Transitions - exemplo - rollover</h1>
+<div id="exemplo1">
+	<img src="imagem1.png" id="imagem1" width="200" height="150" alt="Paisagem">
+	<img src="imagem2.png" id="imagem2" width="200" height="150" alt="Paisagem">
+</div>
+</body>
+</html>

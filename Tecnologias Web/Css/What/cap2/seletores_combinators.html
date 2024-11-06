@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Combinadores</title>
+<style type="text/css">
+h1 {
+	border-bottom: 1px solid #000;
+}
+ul li {
+	color: #f00;
+}
+#menu li {
+	color: #00f;
+}
+#menu1 > li {
+	color: #0f0;
+}
+#texto1 h2 + p {
+	font-style: italic;
+}
+#menu2 > li + li {
+	color: #CCC;
+}
+#texto2 > h2 ~ p {
+	font-style: italic;
+}
+</style>
+</head>
+<body>
+<h1>Combinadores</h1>
+<h2>ul li { color: #f00; }</h2>
+<ul>
+	<li>Item 1</li>
+	<li>Item 2
+		<ol>
+			<li>Sub-item 2.1</li>
+			<li>Sub-item 2.2</li>
+		</ol>
+	</li>
+	<li>Item 3</li>
+</ul>
+<hr>
+<h2>#menu li { color: #00f; }</h2>
+<ul id="menu">
+	<li>Item 1</li>
+	<li>Item 2
+		<ol>
+			<li>Sub-item 2.1</li>
+			<li>Sub-item 2.2</li>
+		</ol>
+	</li>
+	<li>Item 3</li>
+</ul>
+<hr>
+<h2>#menu1 > li { color: #0f0; }</h2>
+<ul id="menu1">
+	<li>Item 1</li>
+	<li>Item 2
+		<ol>
+			<li>Sub-item 2.1</li>
+			<li>Sub-item 2.2</li>
+		</ol>
+	</li>
+	<li>Item 3</li>
+</ul>
+<hr>
+<h2>h2 + p { font-style: italic; }</h2>
+<div id="texto1">
+    <h2>Titulo</h2>
+    <p>Aliquam in quam sit amet diam dictum rhoncus. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus adipiscing lorem, ut gravida sapien quam sit amet mauris. </p>
+    <p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac habitasse platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>li + li { color: gray; }</h2>
+<ul id="menu2">
+	<li>Item 1</li>
+	<li>Item 2</li>
+   	<li>Item 3</li>    
+	<li>Item 4</li>
+	<li>Item 5</li>    
+</ul>
+<hr>
+<h2>h2 ~ p { font-style: italic; }</h2>
+<div id="texto2">
+    <h1>Titulo</h1>
+    <p>Sed arcu tortor, tincidunt ut iaculis a, pharetra suscipit diam. Mauris pharetra, nulla in fermentum faucibus, ipsum elit vulputate elit, sed tempor turpis elit non magna. Ut id suscipit leo.</p>
+    <h2>Sub-titulo</h2>
+    <p>Aliquam in quam sit amet diam dictum rhoncus. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus adipiscing lorem, ut gravida sapien quam sit amet mauris. </p>
+    <p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac habitasse platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+</body>
+</html>

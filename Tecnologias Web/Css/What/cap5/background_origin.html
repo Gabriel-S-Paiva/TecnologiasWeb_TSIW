@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Propriedade background-origin</title>
+<style>
+h2 {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+#origin1 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px dotted #444444;
+	background-image: url(background2.png);
+	background-color: #afcc72;
+}
+#origin2 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px dotted #444444;
+	background-image: url(background2.png);
+	background-color: #afcc72;
+	background-repeat: repeat;
+	-webkit-background-origin: border;	
+	-webkit-background-origin: border-box;
+	-moz-background-origin: border;
+	background-origin: border-box;
+}
+#origin3 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px dotted #444444;
+	background-image: url(background2.png);
+	background-color: #afcc72;
+	background-repeat: repeat;
+	-webkit-background-origin: padding;	
+	-webkit-background-origin: padding-box;
+	-moz-background-origin: padding;	
+	background-origin: padding-box;
+}
+#origin4 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px dotted #444444;
+	background-image: url(background2.png);
+	background-color: #afcc72;
+	background-repeat: repeat;
+	-webkit-background-origin: content;
+	-webkit-background-origin: content-box;
+	-moz-background-origin: content;
+	background-origin: content-box;
+}
+</style>
+</head>
+<body>
+<h1>Propriedade background-origin</h1>
+<h2>Sem background-origin</h2>
+<div id="origin1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-origin: border-box</h2>
+<div id="origin2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-origin: padding-box</h2>
+<div id="origin3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-origin: content-box</h2>
+<div id="origin4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+</body>
+</html>

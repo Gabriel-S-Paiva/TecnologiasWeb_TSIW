@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transforms3D - perspective e origin</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	float: left;
+	margin-top: 50px;
+	margin-right: 40px;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #000;
+	background-color: #00f;
+	color: #fff;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+#exemplo1 {
+	-webkit-transform: rotateY(45deg);
+	-moz-transform: rotateY(45deg);
+	-ms-transform: rotateY(45deg);
+	-o-transform: rotateY(45deg);
+	transform: rotateY(45deg);
+}
+#exemplo2_1 {
+	-webkit-transform: perspective(500px) rotateY(45deg);
+	transform: perspective(500px) rotateY(45deg);
+}
+#exemplo2_2_container {
+	-webkit-perspective: 500px;
+	perspective: 500px;	
+	border: 1px dotted #000;
+	background-color: #fff;	
+}
+#exemplo2_2 {
+	-webkit-transform: rotateY(45deg);
+	transform: rotateY(45deg);
+}
+#exemplo3 {
+	-webkit-transform: perspective(150px) rotateY(45deg);
+	transform: perspective(500px) rotateY(45deg);
+}
+#exemplo4_container {
+	-webkit-perspective: 500px;
+	perspective: 500px;	
+	border: 1px dotted #000;
+	background-color: #fff;
+}
+#exemplo4 {
+	-webkit-transform: rotateY(45deg);
+	transform: rotateY(45deg);
+}
+#exemplo5_container {
+	-webkit-perspective: 500px;
+	perspective: 500px;	
+	-webkit-perspective-origin: top left;
+	perspective-origin: top left;	
+	border: 1px dotted #000;
+	background-color: #fff;
+}
+#exemplo5 {
+	-webkit-transform: rotateY(45deg);
+	transform: rotateY(45deg);
+}
+</style>
+</head>
+
+<body>
+<h1>Transforms3D - perspective e origin</h1>
+<div id="orginal">Original</div>
+<div id="exemplo1">Exemplo 1 - rotateY(45deg) - sem perspectiva</div>
+<div id="exemplo2_1">Exemplo 2_1 - transform: perspective(500px) rotateY(45deg)</div>
+<div id="exemplo2_2_container">
+	<div id="exemplo2_2">Exemplo 2_2 - perspective: 500px + transform: rotateY(45deg)</div>
+</div>
+<div id="exemplo3">Exemplo 3 - transform: perspective(150px) rotateY(45deg)</div>
+<div id="exemplo4_container">
+	<div id="exemplo4">Exemplo 4 - rotateY(45deg) + perspective: 500px;</div>
+</div>
+<div id="exemplo5_container">
+	<div id="exemplo5">Exemplo 5 - rotateY(45deg) + perspective: 500px + perspective-origin</div>
+</div>
+</body>
+</html>

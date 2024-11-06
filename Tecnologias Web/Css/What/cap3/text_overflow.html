@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Propriedade text-overflow</title>
+<script type="text/javascript" src="jquery-1.6.4.js"></script>
+<script type="text/javascript" src="jquery.text-overflow.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#text_overflow").ellipsis();
+}); 
+</script>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#normal {
+	width: 448px;
+	border: 1px solid #000000;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#text_overflow {
+	width: 448px;
+	border: 1px solid #000000;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;	
+	text-overflow: ellipsis;
+}
+</style>
+</head>
+<body>
+<h1>Propriedade text-overflow</h1>
+<h1>Sem text-overflow ou com text-overflow: clip</h1>
+<p id="normal">Dez anos de enamorado, mal sucedido, consumira em Lisboa o bacharel provinciano. Para fazer-se amar da formosa dama de D. Maria I minguavam-lhe dotes físicos: Domingos Botelho era extremamente feio.</p>
+<h1>text-overflow: ellipsis</h1>
+<p id="text_overflow">Dez anos de enamorado, mal sucedido, consumira em Lisboa o bacharel provinciano. Para fazer-se amar da formosa dama de D. Maria I minguavam-lhe dotes físicos: Domingos Botelho era extremamente feio.</p>
+</body>
+</html>

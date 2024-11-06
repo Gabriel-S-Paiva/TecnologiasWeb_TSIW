@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>F03-EX06-layout03</title>
+  <style>
+    body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    }
+
+    .outer-col-1 {
+        background: lightgray;
+        width: 10%;
+    }
+
+    .outer-col-2 {
+        width: 90%;
+    }
+
+    .inner-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .inner-col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .inner-row article {
+        min-height: 60vh;
+    }
+
+    .inner-row aside {
+        background: lightgreen;
+    }
+
+    header,
+    footer {
+        background: lightblue;
+        height: 20vh;
+    }
+
+    header,
+    footer,
+    article,
+    nav,
+    aside {
+        padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="outer-col-1">Nav</nav>
+  <div class="outer-col-2">
+    <header>Header</header>
+    <div class="inner-row">
+      <div class="inner-col">
+        <article>Article</article>
+        <footer>Footer</footer>
+      </div>
+      <aside>Aside</aside>
+    </div>
+  </div>
+</body>
+
+</html>

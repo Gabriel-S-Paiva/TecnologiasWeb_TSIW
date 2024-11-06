@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transforms - múltiplos</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #000;
+	background-color: #00f;
+	color: #fff;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#container1 {
+	position: relative;
+	float: left;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+#original1 {
+	background-color: #fff;
+	border: 1px dotted #000;
+}
+#exemplo1 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	-webkit-transform: rotate(45deg) translateX(150px);
+	-moz-transform: rotate(45deg) translateX(150px);
+	-ms-transform: rotate(45deg) translateX(150px);
+	-o-transform: rotate(45deg) translateX(150px);
+	transform: rotate(45deg) translateX(150px);
+}
+
+#container2 {
+	position: relative;
+	float: left;
+	margin-left: 200px;
+	margin-top: 50px;
+}
+#original2 {
+	background-color: #fff;
+	border: 1px dotted #000;
+}
+#exemplo2 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	-webkit-transform: translateX(150px) rotate(45deg);
+	-moz-transform: translateX(150px) rotate(45deg);
+	-ms-transform: translateX(150px) rotate(45deg);
+	-o-transform: translateX(150px) rotate(45deg);
+	transform: translateX(150px) rotate(45deg);
+}
+</style>
+</head>
+
+<body>
+<h1>Transforms - múltiplos</h1>
+<div id="container1">
+	<div id="original1"></div>
+	<div id="exemplo1">Exemplo 1 - rotate(45deg) translateX(150px)</div>
+</div>
+<div id="container2">
+	<div id="original2"></div>
+	<div id="exemplo2">Exemplo 2 - translateX(150px) rotate(45deg)</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pseudo-classe :not</title>
+<style type="text/css">
+h1 {
+	border-bottom: 1px solid #000;
+}
+#exemplo1 :not(p) {
+	color: red;
+}
+table#ranking td {
+	width: 100px;
+	text-align: center;
+}
+table#ranking tr:not(:last-child) {
+	background-color: #ccc;
+}
+</style>
+</head>
+<body>
+<h1>Pseudo-classe :not</h1>
+<h2>:not(p) = color: red</h2>
+<div id="exemplo1">
+	<h2>titulo</h2>
+	<p>Aliquam in quam sit amet diam dictum <a href="rhoncus">rhoncus</a>. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus <a href="http://www.adipiscing.com">adipiscing</a> lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac <a href="https://www.habitasse.com">habitasse</a>a platea dictumst.</p>
+    <h2>titulo2</h2>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>tr:not(:last-child) = background-color: #ccc;</h2>
+<table border="1" id="ranking">
+	<tr><td>1</td><td>Espanha</td><td>1605 pts</td></tr>
+	<tr><td>2</td><td>Holanda</td><td>1571 pts</td></tr>
+	<tr><td>3</td><td>Alemanha</td><td>1290 pts</td></tr>
+	<tr><td>4</td><td>Uruguai</td><td>1184 pts</td></tr>
+	<tr><td>5</td><td>Portugal</td><td>1158 pts</td></tr>
+	<tr><td>6</td><td>Itália</td><td>1142 pts</td></tr>
+	<tr><td>7</td><td>Brasil</td><td>1132 pts</td></tr>
+	<tr><td>8</td><td>Inglaterra</td><td>1089 pts</td></tr>
+	<tr><td>9</td><td>Croácia</td><td>1057 pts</td></tr>
+	<tr><td>10</td><td>Argentina</td><td>1024 pts</td></tr>
+</table>
+</body>
+</html>

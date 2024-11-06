@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transitions - exemplo - acordeão</title>
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+h1 {
+	border-bottom: 1px solid #000;
+}
+#acordeao .item {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 2px;	
+    overflow: hidden;
+	border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+#acordeao p {
+    height: 150px;
+    padding: 5px;
+}
+#acordeao a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    background: #e6e6e6;
+    padding: 5px;
+    color: #1e1e1e;
+    text-decoration: none;
+}
+#acordeao div:hover a {
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+#acordeao .item {
+    -webkit-transition: height ease-in-out 500ms;
+    -moz-transition: height ease-in-out 500ms;
+    -ms-transition: height ease-in-out 500ms;		
+    -o-transition: height ease-in-out 500ms;
+    transition: height ease-in-out 500ms;	
+}
+#acordeao div:hover {
+    height: 180px;
+}
+</style>
+</head>
+<body>
+<h1>Transitions - exemplo - acordeão</h1>
+<div id="acordeao">
+    <div class="item">
+        <a href="#">Mundo</a>
+        <p>Vivamus erat libero, ornare non laoreet a, posuere non sem. Aenean quis nunc metus. Cras placerat pulvinar odio, suscipit accumsan dolor bibendum vel. Vestibulum varius dignissim magna, eu congue ipsum hendrerit sodales. Donec at risus odio. Quisque commodo, lectus vitae tincidunt iaculis, leo velit sodales mauris, eu vestibulum ante nulla eget leo. Pellentesque sed diam ac eros viverra volutpat sed a nunc.</p>
+    </div>
+    <div class="item">
+	    <a href="#">Política</a>
+		<p>Vivamus erat libero, ornare non laoreet a, posuere non sem. Aenean quis nunc metus. Cras placerat pulvinar odio, suscipit accumsan dolor bibendum vel. Vestibulum varius dignissim magna, eu congue ipsum hendrerit sodales. Donec at risus odio. Quisque commodo, lectus vitae tincidunt iaculis, leo velit sodales mauris, eu vestibulum ante nulla eget leo. Pellentesque sed diam ac eros viverra volutpat sed a nunc.</p>        
+    </div>
+    <div class="item">
+	    <a href="#">Economia</a>
+        <p>Vivamus erat libero, ornare non laoreet a, posuere non sem. Aenean quis nunc metus. Cras placerat pulvinar odio, suscipit accumsan dolor bibendum vel. Vestibulum varius dignissim magna, eu congue ipsum hendrerit sodales. Donec at risus odio. Quisque commodo, lectus vitae tincidunt iaculis, leo velit sodales mauris, eu vestibulum ante nulla eget leo. Pellentesque sed diam ac eros viverra volutpat sed a nunc.</p>       
+    </div>
+    <div class="item">
+	    <a href="#">Sociedade</a>
+        <p>Vivamus erat libero, ornare non laoreet a, posuere non sem. Aenean quis nunc metus. Cras placerat pulvinar odio, suscipit accumsan dolor bibendum vel. Vestibulum varius dignissim magna, eu congue ipsum hendrerit sodales. Donec at risus odio. Quisque commodo, lectus vitae tincidunt iaculis, leo velit sodales mauris, eu vestibulum ante nulla eget leo. Pellentesque sed diam ac eros viverra volutpat sed a nunc.</p>           
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pseudo-classes HTML5 - formulários</title>
+<style type="text/css">
+h1 {
+	border-bottom: 1px solid #000;
+}
+input:focus:invalid {
+	outline: 3px dotted red;
+}
+input:required {
+	background-color: yellow;
+}
+input:focus:required:invalid {
+	background-color: red;
+}
+:out-of-range {
+	background-color: red;
+}
+.legenda {
+	color: #666;
+}
+</style>
+</head>
+<body>
+<h1>Pseudoclasses em formulários HTML5</h1>
+<form id="registo" name="registo" action="processa_registo.php">
+  <h2>Registo</h2>
+  <p class="legenda">Os campos de preenchimento obrigatório possuem como cor de fundo o amarelo.</p>
+  <p class="legenda">Os campos onde se encontra o cursor, cujo valor introduzido seja inválido, possuem uma outline vermelha.</p>  
+  <p class="legenda">Os campos obrigatórios onde se encontra o cursor, cujo valor introduzido seja inválido, possuem um fundo vermelho.</p>  
+  <p>
+    <label for="nome">Nome: </label> 
+    <input name="nome" type="text" id="nome" size="60" maxlength="60" required>
+  </p>
+  <p>
+    <label for="morada">Morada: </label>
+    <input name="morada" type="text" id="morada" size="100" maxlength="100" required>
+  </p>
+  <p>
+    <label for="cp1">CP: </label>
+    <input name="cp1" type="number" id="cp1" size="4" maxlength="4" min="1000" max="9999" >
+    -
+    <input name="cp2" type="number" id="cp2" size="3" maxlength="3" min="1000" max="9999">
+    <input name="cp_localidade" type="text" id="cp_localidade" size="30" maxlength="30">
+  </p>
+  <p>
+    <label for="telefone">Telefone: </label>
+    <input name="telefone" type="tel" id="telefone" size="9" maxlength="9">
+  </p>
+    <p>
+    <label for="email">Email: </label>
+    <input name="email" type="email" id="email" size="60" maxlength="60" required>
+  </p>
+    <p>
+      <label for="pais">País: </label>
+      <select name="pais" size="5" id="pais">
+        <option value="Portugal">Portugal</option>
+        <option value="Espanha">Espanha</option>
+        <option value="França">França</option>
+        <option value="Alemanha">Alemanha</option>
+        <option value="Itália">Itália</option>
+      </select>
+    </p>
+  <p class="legenda">No campo Idade se o valor introduzido for inferior a 18 e superior a 99 o fundo aparece vermelho.</p>      
+  <p>
+    <label for="idade">Idade: </label>
+    <input name="idade" type="number" id="idade" size="2" maxlength="2" min="18" max="99">
+  </p>
+  <p>
+    <input type="submit" name="btRegisto" id="btRegisto" value="Efectuar registo">
+  </p>
+</form>
+
+</body>
+</html>

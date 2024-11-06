@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Múltiplos gradientes num único elemento</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#gradiente_mult1 {
+	height: 200px;
+	width: 400px;
+	border: 1px solid #000000;	
+	background-color: yellow;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.7, transparent), color-stop(0.7, yellow), color-stop(1, black)),
+	-webkit-gradient(radial, 10% 10%, 36, 10% 10%, 40,from(rgba(150, 111, 195, 0.2)), color-stop(0.3, rgba(150, 111, 195, 0.3)),  to(transparent)),
+	-webkit-gradient(radial, 20% 10%, 16, 20% 10%, 20, from(rgba(224, 124, 203, 0.1)), color-stop(0.2, rgba(224, 124, 203, 0.2)), to(transparent)),
+	-webkit-gradient(radial, 30% 30%, 16, 30% 30%, 20, from(rgba(224, 124, 203, 0.1)), color-stop(0.2, rgba(224, 124, 203, 0.2)), to(transparent)),        
+	-webkit-gradient(radial, 10% 30%, 38, 10% 30%, 46, from(rgba(145, 75, 113, 0.3)), color-stop(0.3, rgba(145, 75, 113, 0.4)),  to(transparent)),
+	-webkit-gradient(radial, 50% 30%, 20, 50% 30%, 80, from(rgba(145, 75, 113, 0)), color-stop(0.3, rgba(145, 75, 113, 0.2)),  to(transparent));
+	background-image: -moz-linear-gradient(transparent 70%, yellow 70%, black 100%),
+	-moz-radial-gradient(10% 10%, circle contain, rgba(150, 111, 195, 0.2) 36px, rgba(150, 111, 195, 0.3) 38px, transparent 40px),
+	-moz-radial-gradient(20% 10%, circle contain, rgba(224, 124, 203, 0.2) 16px, rgba(224, 124, 203, 0.3) 17px, transparent 20px),
+	-moz-radial-gradient(30% 30%, circle contain, rgba(224, 124, 203, 0.2) 16px, rgba(224, 124, 203, 0.3) 17px, transparent 20px),
+	-moz-radial-gradient(10% 30%, circle contain, rgba(145, 75, 113, 0.2) 38px, rgba(145, 75, 113, 0.3) 41px, transparent 46px),
+	-moz-radial-gradient(50% 30%, circle contain, rgba(145, 75, 113, 0) 20px, rgba(145, 75, 113, 0.2) 38px, transparent 80px);
+	background-image: -ms-linear-gradient(transparent 70%, yellow 70%, black 100%),
+	-ms-radial-gradient(10% 10%, circle contain, rgba(150, 111, 195, 0.2) 36px, rgba(150, 111, 195, 0.3) 38px, transparent 40px),
+	-ms-radial-gradient(20% 10%, circle contain, rgba(224, 124, 203, 0.2) 16px, rgba(224, 124, 203, 0.3) 17px, transparent 20px),
+	-ms-radial-gradient(30% 30%, circle contain, rgba(224, 124, 203, 0.2) 16px, rgba(224, 124, 203, 0.3) 17px, transparent 20px),
+	-ms-radial-gradient(10% 30%, circle contain, rgba(145, 75, 113, 0.2) 38px, rgba(145, 75, 113, 0.3) 41px, transparent 46px),
+	-ms-radial-gradient(50% 30%, circle contain, rgba(145, 75, 113, 0) 20px, rgba(145, 75, 113, 0.2) 38px, transparent 80px);
+	background-image: linear-gradient(transparent 70%, yellow 70%, black 100%),
+	radial-gradient(10% 10%, circle contain, rgba(150, 111, 195, 0.2) 36px, rgba(150, 111, 195, 0.3) 38px, transparent 40px),
+	radial-gradient(20% 10%, circle contain, rgba(224, 124, 203, 0.2) 16px, rgba(224, 124, 203, 0.3) 17px, transparent 20px),
+	radial-gradient(30% 30%, circle contain, rgba(224, 124, 203, 0.2) 16px, rgba(224, 124, 203, 0.3) 17px, transparent 20px),
+	radial-gradient(10% 30%, circle contain, rgba(145, 75, 113, 0.2) 38px, rgba(145, 75, 113, 0.3) 41px, transparent 46px),
+	radial-gradient(50% 30%, circle contain, rgba(145, 75, 113, 0) 20px, rgba(145, 75, 113, 0.2) 38px, transparent 80px);	
+}
+</style>
+</head>
+<body>
+<h1>Múltiplos gradientes num único elemento</h1>
+<div id="gradiente_mult1"></div>
+</body>
+</html>

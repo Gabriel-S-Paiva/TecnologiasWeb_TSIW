@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Border-image</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+#border1 {
+	width:300px;
+	height:300px;
+	-webkit-border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;
+	-moz-border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;
+	-o-border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;
+	border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;	
+}
+#border2 {
+	width:300px;
+	height:300px;
+	border-width: 27px;
+	-webkit-border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;
+	-moz-border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;
+	-o-border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;
+	border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;	
+}
+#image_repeat div {
+	margin-right: 30px;
+}
+#border3 {
+	width:160px;
+	height:160px;
+	border-width: 27px;
+	-webkit-border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;
+	-moz-border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;
+	-o-border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;
+	border-image: url("border_W3C.png") 27 27 27 27 stretch stretch;	
+	float:left;
+}
+#border4 {
+	width:160px;
+	height:160px;
+	border-width: 27px;
+	-webkit-border-image: url("border_W3C.png") 27 27 27 27 repeat repeat;
+	-moz-border-image: url("border_W3C.png") 27 27 27 27 repeat repeat;
+	-o-border-image: url("border_W3C.png") 27 27 27 27 repeat repeat;
+	border-image: url("border_W3C.png") 27 27 27 27 repeat repeat;	
+	float:left;
+}
+#border5 {
+	width:160px;
+	height:160px;
+	border-width: 27px;
+	-webkit-border-image: url("border_W3C.png") 27 27 27 27 round round;
+	-moz-border-image: url("border_W3C.png") 27 27 27 27 round round;
+	-o-border-image: url("border_W3C.png") 27 27 27 27 round round;
+	border-image: url("border_W3C.png") 27 27 27 27 round round;	
+	float:left;	
+}
+#border6 {
+	width:160px;
+	height:160px;
+	border-width: 27px;
+	-webkit-border-image: url("border_W3C.png") 27 27 27 27 space space;
+	-moz-border-image: url("border_W3C.png") 27 27 27 27 space space;
+	-o-border-image: url("border_W3C.png") 27 27 27 27 space space;		
+	border-image: url("border_W3C.png") 27 27 27 27 space space;		
+	float:left;	
+}
+#border7 {
+	width:320px;
+	height:320px;
+	border: 27px solid #FF4C00;	
+	-webkit-border-image-source: url("border_W3C.png");
+	-webkit-border-image-slice: 27;
+	-webkit-border-image-repeat: stretch;	
+	-moz-border-image-source: url("border_W3C.png");
+	-moz-border-image-slice: 27;
+	-moz-border-image-repeat: stretch;
+	-o-border-image-source: url("border_W3C.png");
+	-o-border-image-slice: 27;
+	-o-border-image-repeat: stretch;	
+	border-image-source: url("border_W3C.png");
+	border-image-slice: 27;
+	border-image-repeat: stretch;
+}
+</style>
+</head>
+
+<body>
+<h1>Border-image</h1>
+<h2>Sem propriedade border</h2>
+<div id="border1"></div>
+<h2>Com propriedade border</h2>
+<div id="border2"></div>
+<h2>Propriedade repeat-image. Valores stretch, repeat, round e space</h2>
+<div id="image_repeat">
+    <div id="border3"></div>
+    <div id="border4"></div>
+    <div id="border5"></div>
+    <div id="border6"></div>    
+</div>    
+<h2 style="clear: both;">Suporte das propriedades individuais</h2>
+<div id="border7"></div>
+</body>
+</html>

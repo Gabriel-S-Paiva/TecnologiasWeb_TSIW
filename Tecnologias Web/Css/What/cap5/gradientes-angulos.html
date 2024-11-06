@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Gradientes com ponto de origem - ângulo</title>
+<style>
+h2 {
+	border-bottom: 1px solid #000;
+}
+#gradiente_ang1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, left center, right center, from(white), to(black));
+	background-image: -webkit-linear-gradient(0deg, white, black);
+	background-image: -moz-linear-gradient(0deg, white, black);
+	background-image: -ms-linear-gradient(0deg, white, black);
+	background-image: -o-linear-gradient(0deg, white, black);	
+	background-image: linear-gradient(0deg, white, black);
+}
+#gradiente_ang2 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, left bottom, right top, from(white), to(black));
+	background-image: -webkit-linear-gradient(45deg, white, black);
+	background-image: -moz-linear-gradient(45deg, white, black);
+	background-image: -o-linear-gradient(45deg, white, black);
+	background-image: -ms-linear-gradient(45deg, white, black);		
+	background-image: linear-gradient(45deg, white, black);
+}
+#gradiente_ang3 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, center bottom, center top, from(white), to(black));
+	background-image: -webkit-linear-gradient(90deg, white, black);
+	background-image: -moz-linear-gradient(90deg, white, black);
+	background-image: -o-linear-gradient(90deg, white, black);
+	background-image: -ms-linear-gradient(90deg, white, black);		
+	background-image: linear-gradient(90deg, white, black);
+}
+#gradiente_ang4 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, right bottom, left top, from(white), to(black));
+	background-image: -webkit-linear-gradient(135deg, white, black);
+	background-image: -moz-linear-gradient(135deg, white, black);
+	background-image: -o-linear-gradient(135deg, white, black);
+	background-image: -ms-linear-gradient(135deg, white, black);		
+	background-image: linear-gradient(135deg, white, black);
+}
+#gradiente_ang5 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, right center, left center, from(white), to(black));
+	background-image: -webkit-linear-gradient(180deg, white, black);
+	background-image: -moz-linear-gradient(180deg, white, black);
+	background-image: -o-linear-gradient(180deg, white, black);
+	background-image: -ms-linear-gradient(180deg, white, black);		
+	background-image: linear-gradient(180deg, white, black);
+}
+#gradiente_ang6 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, right top, left bottom, from(white), to(black));
+	background-image: -webkit-linear-gradient(225deg, white, black);
+	background-image: -moz-linear-gradient(225deg, white, black);
+	background-image: -o-linear-gradient(225deg, white, black);
+	background-image: -ms-linear-gradient(225deg, white, black);		
+	background-image: linear-gradient(225deg, white, black);
+}
+#gradiente_ang7 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(white), to(black));
+	background-image: -webkit-linear-gradient(270deg, white, black);
+	background-image: -moz-linear-gradient(270deg, white, black);
+	background-image: -o-linear-gradient(270deg, white, black);
+	background-image: -ms-linear-gradient(270deg, white, black);		
+	background-image: linear-gradient(270deg, white, black);
+}
+#gradiente_ang8 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(white), to(black));
+	background-image: -webkit-linear-gradient(315deg, white, black);
+	background-image: -moz-linear-gradient(315deg, white, black);
+	background-image: -o-linear-gradient(315deg, white, black);
+	background-image: -ms-linear-gradient(315deg, white, black);		
+	background-image: linear-gradient(315deg, white, black);
+}
+#gradiente_ang9 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, 30% bottom, 70% top, from(white), to(black));
+	background-image: -webkit-linear-gradient(60deg, white, black);
+	background-image: -moz-linear-gradient(60deg, white, black);
+	background-image: -o-linear-gradient(60deg, white, black);
+	background-image: -ms-linear-gradient(60deg, white, black);		
+	background-image: linear-gradient(60deg, white, black);
+}
+#gradiente_ang10 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(white), to(black));
+	background-image: -webkit-linear-gradient(-45deg, white, black);
+	background-image: -moz-linear-gradient(-45deg, white, black);
+	background-image: -o-linear-gradient(-45deg, white, black);
+	background-image: -ms-linear-gradient(-45deg, white, black);		
+	background-image: linear-gradient(-45deg, white, black);
+}
+</style>
+</head>
+
+<body>
+<h1>Gradientes com ponto de origem - ângulo</h1>
+<h2>0deg</h2>
+<div id="gradiente_ang1"></div>
+<h2>45deg</h2>
+<div id="gradiente_ang2"></div>
+<h2>90deg</h2>
+<div id="gradiente_ang3"></div>
+<h2>135deg</h2>
+<div id="gradiente_ang4"></div>
+<h2>180deg</h2>
+<div id="gradiente_ang5"></div>
+<h2>225deg</h2>
+<div id="gradiente_ang6"></div>
+<h2>270deg</h2>
+<div id="gradiente_ang7"></div>
+<h2>315deg</h2>
+<div id="gradiente_ang8"></div>
+<h2>60deg</h2>
+<div id="gradiente_ang9"></div>
+<h2>-45deg</h2>
+<div id="gradiente_ang10"></div>
+</body>
+</html>

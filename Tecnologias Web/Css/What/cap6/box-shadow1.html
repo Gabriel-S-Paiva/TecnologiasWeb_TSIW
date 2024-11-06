@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Box-shadow</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;	
+}
+#shadow1 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: 5px 5px #666;
+	-moz-box-shadow: 5px 5px #666;
+	box-shadow: 5px 5px #666;
+}
+#shadow2 {
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: -5px -5px #666;
+	-moz-box-shadow: -5px -5px #666;
+	box-shadow: -5px -5px #666;
+}
+#shadow3 {
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: 5px 5px 10px #666;
+	-moz-box-shadow: 5px 5px 10px #666;
+	box-shadow: 5px 5px 10px #666;
+}
+#shadow4 {
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: 5px 5px 0px 5px #666;
+	-moz-box-shadow: 5px 5px 0px 5px #666;
+	box-shadow: 5px 5px 0px 5px #666;
+}
+#shadow5 {
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: 5px 5px 0px -5px #666;
+	-moz-box-shadow: 5px 5px 0px -5px #666;
+	box-shadow: 15px 15px 0px -5px #666;
+}
+#shadow6 {
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: inset 5px 5px #666;	
+	-moz-box-shadow: inset 5px 5px #666;
+	box-shadow: inset 5px 5px #666;
+}
+#shadow7 {
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: inset -5px -5px 10px #666;	
+	-moz-box-shadow: inset -5px -5px 10px #666;
+	box-shadow: inset -5px -5px 10px #666;
+}
+</style>
+</head>
+
+<body>
+<h1>Box-shadow</h1>
+<h2>box-shadow: 5px 5px #666</h2>
+<div id="shadow1"></div>
+<h2>box-shadow: -5px -5px #666</h2>
+<div id="shadow2"></div>
+<h2>box-shadow: 5px 5px 10px #666</h2>
+<div id="shadow3"></div>
+<h2>box-shadow: 5px 5px 0px 5px #666</h2>
+<div id="shadow4"></div>
+<h2>box-shadow: 15px 15px 0px -5px #666</h2>
+<div id="shadow5"></div>
+<h2>box-shadow: inset 5px 5px #666;</h2>
+<div id="shadow6"></div>
+<h2>box-shadow: inset -5px -5px 10px #666;</h2>
+<div id="shadow7"></div>
+</body>
+</html>

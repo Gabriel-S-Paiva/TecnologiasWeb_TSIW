@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Propriedade background-repeat</title>
+<style>
+h2 {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+#repeat1 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-image: url(background3.png);
+	background-color: #afcc72;
+}
+#repeat2 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-image: url(background3.png);
+	background-color: #afcc72;
+	background-repeat: repeat no-repeat;
+}
+#repeat3 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-image: url(background3.png);
+	background-color: #afcc72;
+	background-repeat: space;
+}
+#repeat4 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-image: url(background3.png);
+	background-color: #afcc72;
+	background-repeat: round;
+}
+#repeat5 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-image: url(background3.png);
+	background-color: #afcc72;
+	background-repeat: space no-repeat;
+}
+#repeat6 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-color: #afcc72;
+	background-image: url("background3.png"), url("background4.png");
+	background-repeat: repeat-x, repeat-y;
+}
+</style>
+</head>
+<body>
+<h1>Propriedade background-repeat</h1>
+<h2>Sem utilizar background-repeat</h2>
+<div id="repeat1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-repeat: repeat no-repeat</h2>
+<div id="repeat2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-repeat: space (IE9+ e Opera 10.5+)</h2>
+<div id="repeat3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-repeat: round (IE9+ e Opera 10.5+)</h2>
+<div id="repeat4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-repeat: space no-repeat (IE9+ e Opera 10.5+)</h2>
+<div id="repeat5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-image: url("background3.png"), url("background4.png") e background-repeat: repeat-x, repeat-y</h2>
+<div id="repeat6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+</body>
+</html>

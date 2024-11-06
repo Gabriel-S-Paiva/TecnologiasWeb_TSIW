@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Redimensionamento de elementos</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+#overflow {
+	width: 300px;
+	height: 100px;
+	border: 1px solid;
+	overflow: auto;
+}
+#redimensiona1 {
+	width: 300px;
+	height: 100px;
+	border: 1px solid;
+	resize: both;
+	overflow: auto;
+}
+#redimensiona2 {
+	width: 300px;
+	height: 100px;
+	border: 1px solid;
+	resize: both;
+	margin-bottom: 150px;
+}
+#redimensiona3 {
+	width: 300px;
+	height: 100px;
+	border: 1px solid;
+	resize: both;
+	overflow: auto;
+	max-width: 400px;
+	max-height: 200px;	
+}
+#redimensiona4 {
+	width: 300px;
+	height: 100px;
+	border: 1px solid;
+	resize: horizontal;
+	overflow: auto;
+}
+#redimensiona5 {
+	width: 300px;
+	height: 100px;
+	border: 1px solid;
+	resize: vertical;
+	overflow: auto;
+}
+#comentarios2 {
+	resize: none;
+}
+</style>
+</head>
+
+<body>
+<h1>Redimensionamento de elementos</h1>
+<h2>overflow: auto, sem redimensionamento</h2>
+<div id="overflow">
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+</div>
+
+<h2>resize: both</h2>
+<div id="redimensiona1">
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+</div>
+
+<h2>resize: both sem aplicar a propriedade overflow</h2>
+<div id="redimensiona2">
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+</div>
+
+<h2>resize: both + max-width: 400px + max-height: 400px</h2>
+<div id="redimensiona3">
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+</div>
+
+
+<h2>resize: horizontal</h2>
+<div id="redimensiona4">
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+</div>
+
+<h2>resize: vertical</h2>
+<div id="redimensiona5">
+<p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p>
+</div>
+
+<h2>Formulário com elemento textarea</h2>
+<form id="formulario1">
+<label for="comentarios1">Comentários:</label> <textarea id="comentarios1" rows="4" cols="60"></textarea>
+</form>
+
+<h2>Formulário com elemento textarea e resize: none</h2>
+<form id="formulario2">
+<label for="comentarios2">Comentários:</label> <textarea id="comentarios2" rows="4" cols="60"></textarea>
+</form>
+</body>
+</html>

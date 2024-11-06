@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transitions - campos de input</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+input {
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-ms-transition: border 0.5s;	
+	-o-transition: border 0.5s;
+	transition: border 0.5s;
+}
+input:focus {
+	outline: 0;
+	border: rgba(255, 0, 0, 0.5) 8px solid;
+	-webkit-border-radius: 5px;	
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;	
+	-o-border-radius: 5px;	
+	border-radius: 5px;	
+}
+</style>
+</head>
+
+<body>
+<h1>Transitions - campos de input</h1>
+<form id="registo">
+<h2>Registo de utilizador</h2>
+<p><label for="nome">Nome: </label><input type="text" name="nome" id="nome" /></p>
+<p><label for="morada">Morada: </label><input type="text" name="morada" id="morada" /></p>
+<p><label for="telefone">Telefone: </label><input type="text" name="telefone" id="telefone" /></p>
+<p><label for="email">E-mail: </label><input type="text" name="email" id="email" /></p>
+<p><input type="submit" name="btsubmete" id="btsubmete" value="Efectuar registo" /></p>
+</form>
+</div> 
+</body>
+</html>

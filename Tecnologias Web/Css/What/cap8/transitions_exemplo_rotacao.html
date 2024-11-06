@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transitions - exemplo - rotação</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	width: 100px;
+	height: 100px;
+	background-color: #CCC;
+}
+#exemplo1 {
+	margin-bottom: 30px;
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: -ms-transform 1s;		
+	-o-transition: -o-transform 1s;	
+	transition: transform 1s;	
+}
+#exemplo1:hover {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);	
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);	
+	transform: rotate(360deg);	
+}
+
+#exemplo2 {
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	-o-transition: -o-transform 1s;		
+	transition: transform 1s;
+}
+#exemplo2:hover {
+	-webkit-transform: translateX(400px) rotate(180deg);
+	-moz-transform: translateX(400px) rotate(180deg);
+	-ms-transform: translateX(400px) rotate(180deg);	
+	-o-transform: translateX(400px) rotate(180deg);		
+	transform: translateX(400px) rotate(180deg);	
+}
+</style>
+</head>
+<body>
+<h1>Transitions - exemplo - rotação</h1>
+<div id="exemplo1"></div>
+<div id="exemplo2"></div>
+</div> 
+</body>
+</html>

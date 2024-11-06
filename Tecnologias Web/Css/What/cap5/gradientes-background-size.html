@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Gradientes e dimensão do background</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#gradiente_size1 {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #000;	
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	background-size: 50px 50px;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, silver), color-stop(0.5, black));
+	background-image: -webkit-linear-gradient(silver 50%, black 50%);
+	background-image: -moz-linear-gradient(silver 50%, black 50%);
+	background-image: -ms-linear-gradient(silver 50%, black 50%);
+	background-image: linear-gradient(silver 50%, black 50%);
+}
+#gradiente_size2 {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #000;	
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	background-size: 50px 50px;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, silver), color-stop(0.5, black));
+	background-image: -webkit-linear-gradient(silver 50%, black 50%);
+	background-image: -moz-linear-gradient(silver 50%, black 50%);
+	background-image: -ms-linear-gradient(silver 50%, black 50%);
+	background-image: linear-gradient(silver 50%, black 50%);
+	background-repeat: no-repeat;
+}
+#gradiente_size3 {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #000;
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	background-size: 50px 50px;
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.5, silver), color-stop(0.5, black));
+	background-image: -webkit-linear-gradient(left, silver 50%, black 50%);
+	background-image: -moz-linear-gradient(left, silver 50%, black 50%);
+	background-image: -ms-linear-gradient(left, silver 50%, black 50%);
+	background-image: linear-gradient(left, silver 50%, black 50%);
+}
+</style>
+</head>
+<body>
+<h1>Gradientes e dimensão do background</h1>
+<h2>linear-gradient(silver 50%, black 50%)</h2>
+<div id="gradiente_size1"></div>
+<h2>linear-gradient(silver 50%, black 50%) com background-repeat: no-repeat</h2>
+<div id="gradiente_size2"></div>
+<h2>linear-gradient(left, silver 50%, black 50%)</h2>
+<div id="gradiente_size3"></div>
+</body>
+</html>

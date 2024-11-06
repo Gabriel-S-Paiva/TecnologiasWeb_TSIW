@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Propriedade text-shadow</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+h2, p  {
+	margin: 0px;
+}
+#shadow1 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ccc;
+	text-shadow: 10px 0px 0px #000;
+}
+#shadow2 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ccc;
+	text-shadow: -10px 0px 0px #000;
+}
+#shadow3 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	color: #ccc;
+	text-shadow: 0px 10px 0px #000;
+}
+#shadow4 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	color: #ccc;
+	text-shadow: 0px -10px 0px #000;
+}
+#shadow5 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	color: #ccc;
+	text-shadow: 10px 10px 0px #000;
+}
+#shadow6 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	color: #ccc;
+	text-shadow: 10px 10px 10px #000;
+}
+#shadow7 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	color: #ccc;
+	text-shadow: 10px 10px #000;
+}
+#shadow8 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	color: #ccc;
+	text-shadow: #000 10px 10px 10px;
+}
+#div1 {
+	width: 600px;
+	height: 200px;
+	background-color: yellow;
+}
+#shadow9 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	color: #ccc;
+	text-shadow: 10px 10px 10px rgba(255,0,0,0.5);
+}
+#shadow10 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	color: #000;
+	filter: 
+		progid:DXImageTransform.Microsoft.Blur(pixelradius=3)
+		progid:DXImageTransform.Microsoft.DropShadow(color=#23aa56, offx=10, offy=10);
+	text-shadow: 10px 10px 5px #23aa56;
+	zoom: 1;
+}
+#shadow11 {
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	color: #ccc;
+	text-shadow: 10px 10px 5px #000, 20px 20px 20px green;
+}
+</style>
+</head>
+<body>
+<h1>Propriedade text-shadow</h1>
+<h2>Offset horizontal positivo - text-shadow: 10px 0px #000</h2>
+<p id="shadow1">FCA</p>
+<h2>Offset horizontal negativo - text-shadow: -10px 0px #000</h2>
+<p id="shadow2">FCA</p>
+<h2>Offset vertical positivo - text-shadow: 0px 10px #000</h2>
+<p id="shadow3">FCA</p>
+<h2>Offset vertical negativo - text-shadow: 0px -10px #000</h2>
+<p id="shadow4">FCA</p>
+<h2>Utilização de offsets horizontal e vertical positivos - text-shadow: 10px 10px #000</h2>
+<p id="shadow5">FCA</p>
+<h2>Blur - text-shadow: 10px 10px 10px #000</h2>
+<p id="shadow6">FCA</p>
+<h2>Sem blur especificado - text-shadow: 10px 10px #000</h2>
+<p id="shadow7">FCA</p>
+<h2>Colocação da cor no início - text-shadow: #000 10px 10px 10px</h2>
+<p id="shadow8">FCA</p>
+<div id="div1">
+	<h2>Utilização de transparência - text-shadow: 10px 10px 10px rgba(255,0,0,0.5)</h2>
+	<p id="shadow9">FCA</p>
+</div>
+<h2>Suporte do Internet Explorer</h2>
+<p id="shadow10">FCA</p>
+<h2>Aplicação de múltiplas sombras</h2>
+<p id="shadow11">FCA</p>
+</body>
+</html>

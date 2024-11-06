@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Propriedade font-stretch</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: local('Helevetica Neue Condensed'), url('HelveticaNeue-Condensed.otf') format('opentype');
+	font-stretch: condensed;
+}
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: local('Helvetica Neue Medium'), url('HelveticaNeue-Medium.otf') format('opentype');
+	font-stretch: normal;	
+}
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: local('Helvetica Neue Extended'), url('HelveticaNeue-Extended.otf') format('opentype');
+	font-stretch: expanded;
+}
+.containers {
+	float: left;
+	width: 300px;
+	margin-right: 30px;
+}
+.arial_condensed {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	font-stretch: condensed;	
+}
+.arial_normal {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	font-stretch: normal;	
+}
+.arial_expanded {
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	font-stretch: expanded;
+}
+.helveticaneue_condensed {
+	font-family: "HelveticaNeue", sans-serif;
+	font-size: 1em;
+	font-stretch: condensed;
+}
+.helveticaneue_normal {
+	font-family: "HelveticaNeue", sans-serif;
+	font-size: 1em;
+	font-stretch: normal;
+}
+.helveticaneue_expanded {
+	font-family: "HelveticaNeue", sans-serif;
+	font-size: 1em;
+	font-stretch: expanded;
+}
+</style>
+</head>
+<body>
+<h1>Propriedade font-stretch</h1>
+<div class="containers">
+	<h2>Arial Condensed</h2>
+	<p class="arial_condensed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero lectus, hendrerit sed faucibus viverra, porta vel elit. Duis eleifend rhoncus mi, eget iaculis quam pellentesque a. Aenean sed enim elementum nisi aliquam aliquet. Integer tempus malesuada blandit. Quisque blandit volutpat sodales. Cras auctor interdum malesuada. Morbi at sodales diam. In fringilla risus in eros pellentesque porttitor.</p>
+</div>
+<div class="containers">
+	<h2>Arial Normal</h2>
+	<p class="arial_normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero lectus, hendrerit sed faucibus viverra, porta vel elit. Duis eleifend rhoncus mi, eget iaculis quam pellentesque a. Aenean sed enim elementum nisi aliquam aliquet. Integer tempus malesuada blandit. Quisque blandit volutpat sodales. Cras auctor interdum malesuada. Morbi at sodales diam. In fringilla risus in eros pellentesque porttitor.</p>
+</div>
+<div class="containers">
+    <h2>Arial Expanded</h2>
+    <p class="arial_expanded">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero lectus, hendrerit sed faucibus viverra, porta vel elit. Duis eleifend rhoncus mi, eget iaculis quam pellentesque a. Aenean sed enim elementum nisi aliquam aliquet. Integer tempus malesuada blandit. Quisque blandit volutpat sodales. Cras auctor interdum malesuada. Morbi at sodales diam. In fringilla risus in eros pellentesque porttitor.</p>
+</div>
+<hr style="clear: both">
+<div class="containers">
+	<h2>HelveticaNeue Condensed</h2>
+	<p class="helveticaneue_condensed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero lectus, hendrerit sed faucibus viverra, porta vel elit. Duis eleifend rhoncus mi, eget iaculis quam pellentesque a. Aenean sed enim elementum nisi aliquam aliquet. Integer tempus malesuada blandit. Quisque blandit volutpat sodales. Cras auctor interdum malesuada. Morbi at sodales diam. In fringilla risus in eros pellentesque porttitor.</p>
+</div>
+<div class="containers">
+	<h2>HelveticaNeue Normal</h2>
+	<p class="helveticaneue_normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero lectus, hendrerit sed faucibus viverra, porta vel elit. Duis eleifend rhoncus mi, eget iaculis quam pellentesque a. Aenean sed enim elementum nisi aliquam aliquet. Integer tempus malesuada blandit. Quisque blandit volutpat sodales. Cras auctor interdum malesuada. Morbi at sodales diam. In fringilla risus in eros pellentesque porttitor.</p>
+</div>
+<div class="containers">
+    <h2>HelveticaNeue Expanded</h2>
+    <p class="helveticaneue_expanded">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero lectus, hendrerit sed faucibus viverra, porta vel elit. Duis eleifend rhoncus mi, eget iaculis quam pellentesque a. Aenean sed enim elementum nisi aliquam aliquet. Integer tempus malesuada blandit. Quisque blandit volutpat sodales. Cras auctor interdum malesuada. Morbi at sodales diam. In fringilla risus in eros pellentesque porttitor.</p>
+</div>
+</body>
+</html>
+

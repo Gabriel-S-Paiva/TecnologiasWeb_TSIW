@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transforms - skew</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	float: left;
+	margin-top: 50px;
+	margin-right: 100px;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #000;
+	background-color: #00f;
+	color: #fff;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#exemplo1_2 {
+	-webkit-transform: skew(25deg);
+	-moz-transform: skew(25deg);
+	-ms-transform: skew(25deg);
+	-o-transform: skew(25deg);
+	transform: skew(25deg);
+}
+#exemplo1_3 {
+	-webkit-transform: skewX(-25deg);
+	-moz-transform: skewX(-25deg);
+	-ms-transform: skewX(-25deg);
+	-o-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+#exemplo1_4 {
+	-webkit-transform: skew(25deg, 10deg);
+	-moz-transform: skew(25deg, 10deg);
+	-ms-transform: skew(25deg, 10deg);
+	-o-transform: skew(25deg, 10deg);
+	transform: skew(25deg, 10deg);
+}
+#exemplo1_5 {
+	-webkit-transform: skewX(25deg) skewY(10deg);
+	-moz-transform: skewX(25deg) skewY(10deg);
+	-ms-transform: skewX(25deg) skewY(10deg);
+	-o-transform: skewX(25deg) skewY(10deg);
+	transform: skewX(25deg) skewY(10deg);
+}
+</style>
+</head>
+
+<body>
+<h1>Transforms - skew</h1>
+<div id="exemplo1_1">Exemplo 1 - original</div>
+<div id="exemplo1_2">Exemplo 2 - skew(25deg)</div>
+<div id="exemplo1_3">Exemplo 3 - skewX(-25deg)</div>
+<div id="exemplo1_4">Exemplo 4 - skew(25deg, 10deg)</div>
+<div id="exemplo1_5">Exemplo 5 - skewX(25deg) skewY(10deg)</div>
+</body>
+</html>

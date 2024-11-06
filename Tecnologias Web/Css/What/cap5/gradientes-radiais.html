@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Gradientes radiais</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#gradiente_radial1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, 25% 50%, 0, 25% 50%, 200, from(rgb(255,255,255)), to(rgb(0,0,0)));
+	background-image: -webkit-radial-gradient(25% 50%, circle cover, white, black);
+	background-image: -moz-radial-gradient(25% 50%, circle cover, white, black);
+	background-image: -ms-radial-gradient(25% 50%, circle cover, white, black);
+	background-image: radial-gradient(25% 50%, circle cover, white, black);
+}
+#gradiente_radial2 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, 100 100, 0, 100 100, 150, from(rgb(255,255,255)), to(rgb(0,0,0)));
+	background-image: -webkit-radial-gradient(white, black);
+	background-image: -moz-radial-gradient(white, black);
+	background-image: -ms-radial-gradient(white, black);
+	background-image: radial-gradient(white, black);
+}
+#gradiente_radial2a {
+	width: 400px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(rgb(255,255,255)), to(rgb(0,0,0)));
+	background-image: -webkit-radial-gradient(white, black);
+	background-image: -moz-radial-gradient(white, black);
+	background-image: -ms-radial-gradient(white, black);
+	background-image: radial-gradient(white, black);
+}
+#gradiente_radial3 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, 25% 25%, 0, 25% 25%, 200, from(rgb(255,255,255)), to(rgb(0,0,0)));
+	background-image: -webkit-radial-gradient(25% 25%, white, black);
+	background-image: -moz-radial-gradient(25% 25%, white, black);
+	background-image: -ms-radial-gradient(25% 25%, white, black);
+	background-image: radial-gradient(25% 25%, white, black);
+}
+#gradiente_radial3a {
+	width: 400px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, 25% 25%, 0, 25% 25%, 400, from(rgb(255,255,255)), to(rgb(0,0,0)));
+	background-image: -webkit-radial-gradient(25% 25%, white, black);
+	background-image: -moz-radial-gradient(25% 25%, white, black);
+	background-image: -ms-radial-gradient(25% 25%, white, black);
+	background-image: radial-gradient(25% 25%, white, black);
+}
+#gradiente_radial4 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, 25% 25%, 0, 25% 25%, 200, from(rgb(255,255,255)), to(rgb(0,0,0)));
+	background-image: -webkit-radial-gradient(25% 25%, circle, white, black);
+	background-image: -moz-radial-gradient(25% 25%, circle, white, black);
+	background-image: -ms-radial-gradient(25% 25%, circle, white, black);
+	background-image: radial-gradient(25% 25%, circle, white, black);
+}
+#gradiente_radial4a {
+	width: 400px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, 25% 25%, 0, 25% 25%, 400, from(rgb(255,255,255)), to(rgb(0,0,0)));
+	background-image: -webkit-radial-gradient(25% 25%, circle, white, black);
+	background-image: -moz-radial-gradient(25% 25%, circle, white, black);
+	background-image: -ms-radial-gradient(25% 25%, circle, white, black);
+	background-image: radial-gradient(25% 25%, circle, white, black);
+}
+#gradiente_radial5 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(rgb(255,255,255)), to(rgb(0,0,0)));
+	background-image: -webkit-radial-gradient(circle, white, black);
+	background-image: -moz-radial-gradient(circle, white, black);
+	background-image: -ms-radial-gradient(circle, white, black);
+	background-image: radial-gradient(circle, white, black);
+}
+#gradiente_radial5a {
+	width: 400px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(rgb(255,255,255)), to(rgb(0,0,0)));
+	background-image: -webkit-radial-gradient(circle, white, black);
+	background-image: -moz-radial-gradient(circle, white, black);
+	background-image: -ms-radial-gradient(circle, white, black);
+	background-image: radial-gradient(circle, white, black);
+}
+#gradiente_radial6 {
+	width: 400px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(radial, left center, 0, left center, 400, from(black), to(white));
+	background-image: -webkit-radial-gradient(left, circle farthest-side, black, white);
+	background-image: -moz-radial-gradient(left, circle farthest-side, black, white);
+	background-image: -ms-radial-gradient(left, circle farthest-side, black, white);	
+	background-image: radial-gradient(left, circle farthest-side, black, white);
+}
+#gradiente_radial7 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(black), color-stop(50%, white), to(black));
+	background: -webkit-radial-gradient(circle, black, white, black);
+	background: -moz-radial-gradient(circle, black, white, black);
+	background: -ms-radial-gradient(circle, black, white, black);
+	background: radial-gradient(circle, black, white, black);
+}
+</style>
+</head>
+<body>
+<h1>Gradientes radiais</h1>
+<h2>radial-gradient(25% 50%,circle cover, white, black)</h2>
+<div id="gradiente_radial1"></div>
+<h2>radial-gradient(white, black)</h2>
+<div id="gradiente_radial2"></div>
+<h2>radial-gradient(white, black) com width: 400px</h2>
+<div id="gradiente_radial2a"></div>
+<h2>radial-gradient(25% 25%, white, black)</h2>
+<div id="gradiente_radial3"></div>
+<h2>radial-gradient(25% 25%, white, black) com width: 400px</h2>
+<div id="gradiente_radial3a"></div>
+<h2>radial-gradient(25% 25%, circle, white, black)</h2>
+<div id="gradiente_radial4"></div>
+<h2>radial-gradient(25% 25%, circle, white, black) com width: 400px</h2>
+<div id="gradiente_radial4a"></div>
+<h2>radial-gradient(circle, white, black)</h2>
+<div id="gradiente_radial5"></div>
+<h2>radial-gradient(circle, white, black) com width: 400px</h2>
+<div id="gradiente_radial5a"></div>
+<h2>radial-gradient(left, circle farthest-side, black, white)</h2>
+<div id="gradiente_radial6"></div>
+<h2>radial-gradient(circle, black, white, black)</h2>
+<div id="gradiente_radial7"></div>
+</body>
+</html>

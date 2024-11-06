@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transitions - width e height</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	width:100px;
+	height:100px;	
+	background-color: #CCC;	
+	margin-bottom: 30px;
+}
+#exemplo1 {
+	-webkit-transition-property: width;
+	-moz-transition-property: width;
+	-ms-transition-property: width;
+	-o-transition-property: width;	
+	transition-property: width;
+}
+#exemplo1:hover {
+	width: 200px;
+}
+
+#exemplo2 {
+	-webkit-transition-property: width, height;	
+	-moz-transition-property: width, height;	
+	-ms-transition-property: width, height;			
+	-o-transition-property: width, height;	
+	transition-property: width, height;
+}
+#exemplo2:hover {
+	width: 200px;
+	height: 200px;	
+}
+
+#exemplo3 {
+	-webkit-transition-property: width, background-color;
+	-moz-transition-property: width, background-color;
+	-ms-transition-property: width, background-color;
+	-o-transition-property: width, background-color;		
+	transition-property: width;
+	-webkit-transition-duration: 2s;
+	-moz-transition-duration: 2s;
+	-ms-transition-duration: 2s;
+	-o-transition-duration: 2s;		
+	transition-duration: 2s;
+}
+#exemplo3:hover {
+	background-color: #666;	
+	width: 200px;
+}
+
+#exemplo4 {
+	-webkit-transition-property: width, height;	
+	-moz-transition-property: width, height;	
+	-ms-transition-property: width, height;	
+	-o-transition-property: width, height;				
+	transition-property: width, height;
+	-webkit-transition-duration: 2s, 1s;
+	-moz-transition-duration: 2s, 1s;
+	-ms-transition-duration: 2s, 1s;
+	-o-transition-duration: 2s, 1s;			
+	transition-duration: 2s, 1s;
+}
+#exemplo4:hover {
+	width: 200px;
+	height: 200px;	
+}
+
+#exemplo5 {
+	-webkit-transition-property: width;
+	-moz-transition-property: width;
+	-ms-transition-property: width;
+	-o-transition-property: width;		
+	transition-property: width;
+	-webkit-transition-duration: 2s;
+	-moz-transition-duration: 2s;
+	-ms-transition-duration: 2s;
+	-o-transition-duration: 2s;			
+	transition-duration: 2s;
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-ms-transition-delay: 1s;
+	-o-transition-delay: 1s;			
+	transition-delay: 1s;
+}
+#exemplo5:hover {
+	width:200px;
+}
+
+#exemplo6 {
+	-webkit-transition: width 2s ease 1s, height 1s ease-out 0;
+	-moz-transition: width 2s ease 1s, height 1s ease-out 0;
+	-ms-transition: width 2s ease 1s, height 1s ease-out 0;
+	-o-transition: width 2s ease 1s, height 1s ease-out 0;			
+	transition: width 2s ease 1s, height 1s ease-out 0;
+}
+#exemplo6:hover {
+	width: 200px;
+	height: 200px;	
+}
+</style>
+</head>
+<body>
+<h1>Transitions - width e height</h1>
+<div id="exemplo1">1</div>
+<div id="exemplo2">2</div>
+<div id="exemplo3">3</div>
+<div id="exemplo4">4</div>
+<div id="exemplo5">5</div>
+<div id="exemplo6">6</div>
+</div> 
+</body>
+</html>

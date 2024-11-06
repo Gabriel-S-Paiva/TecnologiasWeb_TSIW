@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Selectores attribute</title>
+<style type="text/css">
+h1 {
+	border-bottom: 1px solid #000;
+}
+#exemplo1 [href] {
+	color: red;
+}
+#exemplo1 a[href] img[border] {
+	border-color: green;
+}
+
+#exemplo2 img[alt=""], #exemplo2 img:not([alt])  {
+	border: 3px dotted #f00;
+}
+
+#exemplo3 a[type="application/pdf"] {
+	padding: 0.5em 20px 0.5em 0;
+	background: url(pdf.png) no-repeat center right;
+}
+
+#exemplo4 a[href^="http://"], #exemplo4 a[href^="https://"] { 
+	background-color: green;
+}
+
+#exemplo5 a[href$=".pdf"] {
+	padding: 0.5em 20px 0.5em 0;
+	background: url(pdf.png) no-repeat center right;
+}
+</style>
+</head>
+<body>
+<h1>Selectores attribute</h1>
+<h2>[href] { color: red; }</h2>
+<div id="exemplo1">
+	<p>Aliquam in quam sit amet diam dictum <a href="http://www.rhoncus.com">rhoncus</a>. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus <a href="http://www.adipiscing.com">adipiscing</a> lorem, ut gravida sapien quam sit amet mauris.
+</p>
+  <p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac <a href="http://www.habitasse.com">habitasse<img src="pdf.png" border="1"></a> platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>img[alt=""] { border: 3px dotted #f00; }</h2>
+<div id="exemplo2">
+	<p><img src="pdf.png" alt=""></p>
+   	<p><img src="pdf.png" alt="Ficheiro PDF"></p>
+	<p><img src="pdf.png"></p>    
+</div>    
+<hr>
+<h2>a[type="application/pdf"]</h2>
+<div id="exemplo3">
+    <p>Pode obter mais informação neste <a href="info.pdf" type="application/pdf"> ficheiro</a>.</p>
+</div>
+<hr>
+<h2>a[href^="http://"], a[href^="https://"]</h2>
+<div id="exemplo4">
+	<p>Aliquam in quam sit amet diam dictum <a href="rhoncus">rhoncus</a>. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus <a href="http://www.adipiscing.com">adipiscing</a> lorem, ut gravida sapien quam sit amet mauris.</p>
+  <p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac <a href="https://www.habitasse.com">habitasse</a>a platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>a[href$=".pdf"]</h2>
+<div id="exemplo5">
+    <p>Pode obter mais informação neste <a href="info.pdf" type="application/pdf"> ficheiro</a>.</p>
+</div>
+</body>
+</html>

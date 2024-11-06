@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Animações - marquee - exemplo 2</title>
+<style>
+#titulo {
+	border-bottom: 1px solid #000;
+}
+@-webkit-keyframes marquee {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+	50% {
+		font-size: 300%;
+		margin-left: 50%;
+		width: 200%;
+	}
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+@-moz-keyframes marquee {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+	50% {
+		font-size: 300%;
+		margin-left: 50%;
+		width: 200%;
+	}
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+@keyframes marquee {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+	50% {
+		font-size: 300%;
+		margin-left: 50%;
+		width: 200%;
+	}
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+h1.anima {
+	-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-name: marquee;	  
+	-moz-animation-name: marquee;
+	animation-name: marquee;
+}
+</style>
+</head>
+<body>
+<h1 id="titulo">Animações - marquee - exemplo 2</h1>
+<h1 class="anima">Estou a mover-me!</h1> 
+<p>Vivamus erat libero, ornare non laoreet a, posuere non sem. Aenean quis nunc metus. Cras placerat pulvinar odio, suscipit accumsan dolor bibendum vel. Vestibulum varius dignissim magna, eu congue ipsum hendrerit sodales. Donec at risus odio. Quisque commodo, lectus vitae tincidunt iaculis, leo velit sodales mauris, eu vestibulum ante nulla eget leo. Pellentesque sed diam ac eros viverra volutpat sed a nunc.</p>
+</body>
+</html>

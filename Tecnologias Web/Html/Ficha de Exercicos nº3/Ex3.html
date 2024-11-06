@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Nome<input minlength="3" placeholder="Introduza o seu nome" name="name"><br>
+        Email<input required placeholder="Introduza o seu email" name="email"><br>
+        Idade<input required placeholder="Intruduza a sua idade" name="age"><br>
+        Data de Nascimento<input type="date" name="bday"><br>
+        Nacionalidade<select name=nationalitiy>
+            <option>Portugues</option>
+            <option>Spanish</option>
+            <option>British</option>
+            <option>Indian</option>
+            <option>other</option>
+        </select><br>
+        Palavra-passe<input title="Use pelo menos uma maiscula e uma minuscula" type="password"required pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Intruduza Palavra-passe" name="Passe"><br>
+        <input type="submit" value="Submeter Formulario">
+    </form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Box-shadow - exemplos</title>
+<style>
+#titulo {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;	
+	margin-top: 30px;	
+}
+
+#exemplo1 {
+	background-color: #6bf325;
+	padding:1em;
+	-webkit-border-top-left-radius: 1em 3em;
+	-webkit-border-bottom-right-radius: 1em 3em;
+	-webkit-border-bottom-left-radius: 0.4em;
+	-webkit-border-top-right-radius: 0.4em;
+	-moz-border-radius-topleft: 1em 3em;
+	-moz-border-radius-bottomright: 1em 3em;
+	-moz-border-radius-bottomleft: 0.4em;
+	-moz-border-radius-topright: 0.4em;
+	border-top-left-radius: 1em 3em;
+	border-bottom-right-radius: 1em 3em;
+	border-bottom-left-radius: 0.4em;
+	border-top-right-radius: 0.4em;
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: thick;
+	-webkit-box-shadow: 2px 2px 8px #666;
+	-moz-box-shadow: 2px 2px 8px #666;
+	box-shadow: 2px 2px 8px #666;
+}
+#exemplo2 {
+	background-color: #6bf325;
+	padding: 1em;
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: thick;
+	-webkit-box-shadow: inset 2px 2px 8px #666, 2px 2px 8px #666;
+	-moz-box-shadow: inset 2px 2px 8px #666, 2px 2px 8px #666;
+	box-shadow: inset 2px 2px 8px #666, 2px 2px 8px #666;
+}
+#exemplo3 {
+	height: 1em;
+	width: 1em;
+	background-color: #ccc;
+	text-align: center;
+	font-size: 7em;
+	line-height: 1em;
+	color: #ffffff;
+	border: solid white 0.05em;
+	-webkit-border-radius: 1em;	
+	-moz-border-radius: 1em;	
+	border-radius: 1em;	
+	-webkit-box-shadow: inset 0px 0px 10px rgba(255,255,255,0.8), 1px 1px 10px rgba(0,0,0,0.4);	
+	-moz-box-shadow: inset 0px 0px 10px rgba(255,255,255,0.8), 1px 1px 10px rgba(0,0,0,0.4);
+	box-shadow: inset 0px 0px 10px rgba(255,255,255,0.8), 1px 1px 10px rgba(0,0,0,0.4);
+}
+
+a {
+	margin-left: 30px;
+	text-decoration: none;
+	display: block;
+	padding: 0.5em;
+	font-size: 1.3em;
+	background-color: #4167c0;
+	text-align: center;
+	width: 7em;
+	color: #fcffff;
+	-webkit-text-shadow: 0 1px 0 #000, 0 -1px 0 #ccc;	
+	-moz-text-shadow: 0 1px 0 #000, 0 -1px 0 #ccc;
+	text-shadow: 0 1px 0 #000, 0 -1px 0 #ccc;
+	border: 2px solid #0FF;
+	-webkit-border-radius: 2em;	
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+	-webkit-box-shadow: 0 0 10px white;
+	-moz-box-shadow: 0 0 10px white;
+	box-shadow: 0 0 10px white;
+}
+
+a:hover {
+	-webkit-box-shadow: 0 0 30px blue;
+	-moz-box-shadow: 0 0 30px blue;	
+	box-shadow: 0 0 30px blue;
+}
+
+</style>
+</head>
+<body>
+<h1 id="titulo">Box-shadow - exemplos</h1>
+<h1 id="exemplo1">Teste de cabeçalho</h2>
+<h1 id="exemplo2">Teste de cabeçalho</h2>
+<div id="exemplo3">&#x2665;</div>
+<a href="#">Teste de link</a>
+</body>
+</html>

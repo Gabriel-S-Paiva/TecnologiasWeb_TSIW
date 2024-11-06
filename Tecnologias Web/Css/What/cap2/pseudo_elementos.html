@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pseudoelementos</title>
+<style type="text/css">
+h1 {
+	border-bottom: 1px solid #000;
+}
+div#exemplo1 p:first-letter {
+	font-size: 1.25em;
+	font-weight: bold;	
+}
+div#exemplo2 p:first-of-type:first-letter {
+	font-size: 1.25em;
+	font-weight: bold;	
+}
+
+div#exemplo3 p:first-line {
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #600;
+}
+
+div#exemplo4 a[href$=".pdf"]:before {
+	content: url('pdf.png');
+	margin-right: 5px;
+}
+
+#menu li.opcional:before {
+	content: "(opcional)";
+	color: red;
+	margin-right: 5px;
+}
+
+#lista > li { display: inline; list-style-type: none; }
+#lista > li:after { content: ", "; }
+#lista > li:last-child:before { content: "e "; }
+#lista > li:last-child:after { content: "."; }
+
+div#exemplo5 {
+	background-color: blue;
+}
+div#exemplo5 p::selection, div#exemplo4 p::-moz-selection {
+	color: #f00;
+	background-color: #ff0;
+}
+
+</style>
+</head>
+<body>
+<h1>Pseudoelementos</h1>
+<h2>p:first-letter</h2>
+<div id="exemplo1">
+	<p>Aliquam in quam sit amet diam dictum . Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac a platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>p:first-of-type:first-letter</h2>
+<div id="exemplo2">
+	<p>Aliquam in quam sit amet diam dictum . Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac a platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>p:first-line</h2>
+<div id="exemplo3">
+	<p>Aliquam in quam sit amet diam dictum . Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac a platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>a[href$=".pdf"]:before</h2>
+<div id="exemplo4">
+	<p>Aliquam in quam sit amet diam dictum <a href="rhoncus.pdf">rhoncus</a>. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus <a href="adipiscing.pdf">adipiscing</a> lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac <a href="http://www.habitasse.com">habitasse</a> a platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>::selection</h2>
+<div id="exemplo5">
+	<p>Aliquam in quam sit amet diam dictum <a href="rhoncus.pdf">rhoncus</a>. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus <a href="adipiscing.pdf">adipiscing</a> lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac <a href="http://www.habitasse.com">habitasse</a> a platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>li.opcional:before</h2>
+<ul id="menu">
+    <li>Política</li>
+    <li class="opcional">Internacional</li>
+    <li>Desporto</li>
+    <li>Cultura</li>
+    <li class="opcional">Ciência</li>
+</ul>
+<hr>
+<h2>a[href$=".pdf"]:before</h2>
+<ul id="lista">
+    <li>Política</li>
+    <li>Internacional</li>
+    <li>Desporto</li>
+    <li>Cultura</li>
+    <li>Ciência</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Múltiplas box-shadows</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;	
+	margin-top: 30px;	
+	width: 100px;
+	height: 100px;	
+}
+#mshadow1 {
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: 10px 10px #666, -10px -10px #666;	
+	-moz-box-shadow: 10px 10px #666, -10px -10px #666;
+	box-shadow: 10px 10px #666, -10px -10px #666;
+}
+#mshadow2 {
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: inset 4px -4px 2px #999 , inset -4px 4px 2px #000;	
+	-moz-box-shadow: inset 4px -4px 2px #999 , inset -4px 4px 2px #000;
+	box-shadow: inset 4px -4px 2px #999 , inset -4px 4px 2px #000;
+}
+#mshadow3 {
+	background-color: #ccc;
+	-webkit-box-shadow: inset 5px -5px 10px #999, inset -5px 5px 10px #555;	
+	-moz-box-shadow: inset 5px -5px 10px #999, inset -5px 5px 10px #555;
+	box-shadow: inset 5px -5px 10px #999, inset -5px 5px 10px #555;
+}
+#mshadow4 {
+	border: 1px solid #000000;
+	background-color: #ccc;
+	-webkit-box-shadow: inset -5px -5px 10px #666, inset 5px 5px 10px #666;	
+	-moz-box-shadow: inset -5px -5px 10px #666, inset 5px 5px 10px #666;
+	box-shadow: inset -5px -5px 10px #666, inset 5px 5px 10px #666;
+}		
+</style>
+</head>
+
+<body>
+<h1>Múltiplas box-shadows</h1>
+<h2>box-shadow: 10px 10px #666, -10px -10px #666</h2>
+<div id="mshadow1"></div>
+<h2>box-shadow: inset 4px -4px 2px #999 , inset -4px 4px 2px #000</h2>
+<div id="mshadow2"></div>
+<h2>box-shadow: inset 5px -5px 10px #999, inset -5px 5px 10px #555</h2>
+<div id="mshadow3"></div>
+<h2>box-shadow: inset -5px -5px 10px #666, inset 5px 5px 10px #666</h2>
+<div id="mshadow4"></div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pseudo-classes</title>
+<style type="text/css">
+h1 {
+	border-bottom: 1px solid #000;
+}
+q:lang(pt) {
+	quotes: "«" "»";
+}
+
+div#exemplo1 > p:first-child {
+	font-style: italic;
+}
+div#exemplo1 > :last-child {
+	font-style: italic;
+}
+
+div#exemplo2 > *:first-child {
+	font-style: italic;
+}
+div#exemplo2 *:first-child + * + * {
+	color: green;
+}
+
+ul#lista {
+	width:130px;
+	text-align: center;
+	list-style-type: none;
+}
+ul#lista li {
+	border-top: solid 1px #000;
+}
+ul#lista li:last-child {
+	border-bottom: solid 1px #000;
+}
+
+div#first_type1 > p:first-of-type {
+	font-style: italic;
+}
+
+div#only1 > :only-child {
+	color: green;
+}
+div#only2 > :only-child {
+	color: green;
+}
+div#only3 > p:only-child {
+	color: green;
+}
+div#only4 > h2:only-of-type {
+	color: green;
+}
+
+#empty1 :empty {
+	border: 1px solid #f00;
+	background:#ff0;
+}
+</style>
+</head>
+<body>
+<h1>Pseudoclasses</h1>
+<h2>:lang com quotes</h2>
+<p>A obra prima de Eça de Queirós é <q lang="pt">Os Maias</q>.</p>
+<hr>
+<h2>div > p:first-child - itálico e div :last-child - itálico</h2>
+<div id="exemplo1">
+	<p>Aliquam in quam sit amet diam dictum <a href="rhoncus">rhoncus</a>. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus <a href="http://www.adipiscing.com">adipiscing</a> lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac <a href="https://www.habitasse.com">habitasse</a> a platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>div > *:first-child - itálico</h2>
+<div id="exemplo2">
+	<h2>titulo</h2>
+	<p>Aliquam in quam sit amet diam dictum <a href="rhoncus">rhoncus</a>. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus <a href="http://www.adipiscing.com">adipiscing</a> lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac <a href="https://www.habitasse.com">habitasse</a> a platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>li:last-child - border-bottom</h2>
+<ul id="lista">
+    <li>Política</li>
+    <li>Internacional</li>
+    <li>Desporto</li>
+    <li>Cultura</li>
+    <li>Ciência</li>
+</ul>
+<hr>
+<h2>div#first_type1 > p:first-of-type - itálico</h2>
+<div id="first_type1">
+	<h2>Sub-título</h2>
+    <p>Aliquam in quam sit amet diam dictum. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac habitassea platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>div id="only1" - :only-child - propriedade color: green</h2>
+<div id="only1">
+	<p>Aliquam in quam sit amet diam dictum. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac habitassea platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<h2>div id="only2" - :only-child - propriedade color: green</h2>
+<div id="only2">
+	<p>Aliquam in quam sit amet diam dictum. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+</div>
+<hr>
+<h2>div id="only3" - p:only-child - propriedade color: green - elemento blockquote</h2>
+<div id="only3">
+	<blockquote>Aliquam in quam sit amet diam dictum.</blockquote>
+</div>
+<hr>
+<h2>div id="only4" - h2:only-of-type - propriedade color: green</h2>
+<div id="only4">
+	<h2>Sub-título</h2>
+	<p>Aliquam in quam sit amet diam dictum. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus lorem, ut gravida sapien quam sit amet mauris.</p>
+	<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac habitassea platea dictumst.</p>
+    <p>Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra.</p>
+</div>
+<hr>
+<h2>:empty - border e background num div vazio</h2>
+<div id="empty1">
+	<h2>Sub-título</h2>
+    <p>Aliquam in quam sit amet …</p>
+    <p>Aenean non consequat turpis …</p>
+    <p>Pellentesque in turpis blandit …</p>
+	<div></div>
+</div>
+</body>
+</html>

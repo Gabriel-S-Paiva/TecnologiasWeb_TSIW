@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Box-shadow - suporte no Internet Explorer</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;	
+	margin-top: 30px;	
+}
+#shadow_ie1 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	background-color: #ccc;
+	box-shadow: 5px 5px #666;
+}
+#shadow_ie2 {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	background-color: #ccc;
+	box-shadow: 5px 5px #666;	
+	filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='#666666');
+}
+</style>
+</head>
+<body>
+<h1>Box-shadow - suporte no Internet Explorer</h1>
+<h2>Sem suporte no Internet Explorer</h2>
+<div id="shadow_ie1"></div>
+<h2>Com suporte no Internet Explorer</h2>
+<div id="shadow_ie2"></div>
+</body>
+</html>

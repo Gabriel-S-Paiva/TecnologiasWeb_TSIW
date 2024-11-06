@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Propriedade background-size</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+#size1 {
+	width: 200px;
+	height: 200px;
+	background: #999999;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-image: url(background1.png);
+	background-repeat: no-repeat;	
+}
+#size2 {
+	width: 200px;
+	height: 200px;
+	background: #999999;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-image: url(background1.png);
+	background-repeat: no-repeat;
+	background-size: auto auto;
+}
+#size3 {
+	width: 200px;
+	height: 200px;
+	background: #999999;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-image: url(retro_background_01.gif);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#size4 {
+	width: 200px;
+	height: 200px;
+	background: #999999;
+	padding: 20px;
+	border: 10px solid #444444;
+	background-image: url(retro_background_01.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#size5 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px solid #444444;
+	background:
+		url('background2.png') no-repeat 95% 45%,
+		url('background2.png') no-repeat 10% 10%,
+		url('background2.png') no-repeat 10% 100%;
+	background-size: auto, 15%, 50%;
+	background-color: #afcc72;	
+}
+</style>
+</head>
+<body>
+<h1>Propriedade background-size</h1>
+<h2>Com imagem de fundo em tamanho normal</h2>
+<div id="size1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>Com imagem de fundo e background-size: auto auto;</h2>
+<div id="size2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-size: contain</h2>
+<div id="size3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-size: cover</h2>
+<div id="size4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>Múltiplas repetições da mesma imagem em locais distintos</h2>
+<div id="size5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+</body>
+</html>

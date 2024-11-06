@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Flexible Box Layout - centrar elementos</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#parente {
+	width: 600px;
+	height: 400px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;	
+	display: box;
+	-webkit-box-align: center;		
+	-moz-box-align: center;
+	-ms-box-align: center;	
+	box-align: center;
+	-webkit-box-pack: center;	
+	-moz-box-pack: center;
+	-ms-box-pack: center;	
+	box-pack: center;
+	border: 1px solid #000;
+}
+#filho {
+	height: 200px;
+	width: 400px;	
+	padding: 10px;
+	border: 1px solid #ccc;
+	-webkit-box-flex: 0;	
+	-moz-box-flex: 0;
+	-ms-box-flex: 0;	
+	box-flex: 0;
+}
+</style>
+</head>
+<body>
+<h1>Flexible Box Layout - centrar elementos</h1>
+<div id="parente">
+	<div id="filho"><p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p></div>
+</div>
+</body>
+</html>

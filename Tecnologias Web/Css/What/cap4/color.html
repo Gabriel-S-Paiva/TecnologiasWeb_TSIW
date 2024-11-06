@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Utilização de cor</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#default_color {
+	width: 150px;
+	height: 150px;	
+	color: blue;
+	border-style: solid;
+	border-width: 5px;
+}
+p.cor_normal {
+	color: fuchsia;
+}
+p.cor_extended1 {
+	color: burlywood;
+}
+p.cor_extended2 {
+	color: #DEB887;
+}
+p.cor_extended3 {
+	color: rgb(222,184,135);
+}
+p.cor_limite {
+	color: rgb(300,0,0);
+}
+#paleta1 {
+	width: 150px;
+	height: 150px;	
+	background-color: hsl(120, 100%, 80%);
+	float: left;
+}
+#paleta2 {
+	width: 150px;
+	height: 150px;	
+	background-color: hsl(120, 100%, 65%);
+	float: left;	
+}
+#paleta3 {
+	width: 150px;
+	height: 150px;	
+	background-color: hsl(120, 100%, 50%);
+	float: left;	
+}
+#paleta4 {
+	width: 150px;
+	height: 150px;	
+	background-color: hsl(120, 100%, 35%);
+	float: left;	
+}
+#paleta5 {
+	width: 150px;
+	height: 150px;	
+	background-color: hsl(120, 100%, 20%);
+	float: left;	
+}
+#especial {
+	width: 150px;
+	height: 150px;
+	color: green;
+	border-width: 5px;
+	border-style: solid;
+	border-color: currentColor;
+}
+</style>
+</head>
+<body>
+<h1>Utilização de cor</h1>
+<h2>Utilização de cor predefinida</h2>
+<div id="default_color"></div>
+<h2>Unidades</h2>
+<p class="cor_normal">Cor Normal - fuchsia</p>
+<p class="cor_extended1">Cor Extended - burlywood</p>
+<p class="cor_extended2">Cor Extended - equivalente hexadecimal - #DEB887</p>
+<p class="cor_extended3">Cor Extended - equivalente RGB decimal - rgb(222,184,135)</p>
+<p class="cor_limite">Cor RGB com valor acima do permitido - 300</p>
+<h2>Paleta de cores HSL</h2>
+<div id="paleta1"></div>
+<div id="paleta2"></div>
+<div id="paleta3"></div>
+<div id="paleta4"></div>
+<div id="paleta5"></div>
+<h2>Utilização do valor currentColor para border-color (green)</h2>
+<div id="especial">Exemplo</div>
+</body>
+</html>

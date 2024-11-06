@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transforms - origin</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#original, #exemplo1, #exemplo2, #exemplo3 {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #000;
+	background-color: #00f;
+	color: #fff;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+	position: relative;
+	margin-top: 150px;
+	margin-left: 250px;
+}
+#original {
+	background-color: #fff;
+	border: 1px dotted #000;
+}
+#exemplo1 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+#exemplo2 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	-webkit-transform-origin: left top;	
+	-moz-transform-origin: left top;	
+	-ms-transform-origin: left top;	
+	-o-transform-origin: left top;	
+	transform-origin: left top;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+#exemplo3 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	-webkit-transform-origin: left 100px;
+	-moz-transform-origin: left 100px;
+	-ms-transform-origin: left 100px;
+	-o-transform-origin: left 100px;
+	transform-origin: left 100px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+</style>
+</head>
+
+<body>
+<h1>Transforms - origin</h1>
+<div id="container">
+	<div id="original">Original</div>
+	<div id="exemplo1">Exemplo 1 - sem origin</div>
+	<div id="exemplo2">Exemplo 2 - origin: left top</div>
+	<div id="exemplo3">Exemplo 3 - origin: left 100px</div>
+</div>
+</body>
+</html>

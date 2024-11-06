@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Gradientes - Suporte do Internet Explorer</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#gradiente_IE {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(yellow), to(red));
+	background-image: -webkit-linear-gradient(yellow, red);
+	background-image: -moz-linear-gradient(yellow, red);
+	background-image: -ms-linear-gradient(yellow, red);
+	background-image: -o-linear-gradient(yellow, red);	
+	background-image: linear-gradient(yellow, red);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff00',endColorstr='#ff0000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffff00, endColorstr=#ff0000)";
+}
+</style>
+</head>
+<body>
+<h1>Gradientes - Suporte do Internet Explorer</h1>
+<div id="gradiente_IE"></div>
+</body>
+</html>

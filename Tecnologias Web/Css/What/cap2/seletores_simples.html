@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Selectores simples</title>
+<style type="text/css">
+h1 {
+	border-bottom: 1px solid #000;
+}
+p {
+	font-size: 2em;
+}
+a {
+	color: red;
+}
+#header {
+	background:#ff0;
+}
+.especial {
+	color: red;
+}
+p.especial {
+	background-color: cyan;
+	font-weight: bold;	
+}
+
+.realce { font-weight: bold; }
+.amarelo { color: yellow; }
+.realce.amarelo { background-color: green; }
+
+#titulo { color: blue; }
+.realce { color: yellow; }
+h2 { color: red; }
+
+#container * {
+	border: 1px solid black;
+}
+
+</style>
+</head>
+<body>
+<h1>Selectores simples</h1>
+<div id="header">
+<h1>Página Exemplo</h1>
+</div>
+<p>Lorem ipsum dolor sit amet, <a href="info.html">consectetur</a> adipiscing elit. Fusce suscipit bibendum ipsum sit amet tincidunt. Aliquam in quam sit amet diam dictum rhoncus. Aenean blandit nulla eu dolor sagittis a suscipit ligula sagittis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquam, massa eleifend feugiat suscipit, dolor orci vehicula lorem, quis ultricies tellus ligula et lectus. Morbi ornare varius laoreet. Sed semper rutrum pharetra. Nullam sit amet erat nec tellus dapibus tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+<p>Cras aliquam ligula nibh, non <a href="rutrum.html">rutrum</a> risus. Mauris feugiat pellentesque nulla, vel faucibus enim bibendum id. Aenean non consequat turpis. Quisque suscipit metus eu felis blandit vel aliquet lorem rhoncus. Duis porttitor mattis porta. Sed hendrerit, tortor ac hendrerit vulputate, ante tellus adipiscing lorem, ut gravida sapien quam sit amet mauris. Proin tempus eros mi. Curabitur pellentesque odio at orci aliquam dictum. Phasellus ut sapien turpis. Sed aliquet turpis non lorem placerat eget semper augue bibendum. Nam tempus magna eu enim lobortis varius.</p>
+<p>Pellentesque in turpis blandit mi pretium mollis id sit amet enim. Nam tempor ante in eros posuere eget tristique nisl gravida. Ut mauris est, lobortis id porttitor eu, condimentum eu mi. In hac habitasse platea dictumst. Proin at mauris eu sapien vehicula mattis. Nullam nec mauris eleifend elit tristique dignissim. Sed feugiat purus ut velit hendrerit <a href="tristique.html">tristique</a> ac vel massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas consequat tempus velit, sit amet condimentum augue tempus ac. Mauris suscipit ipsum quis diam convallis eget adipiscing neque scelerisque.</p>
+<p>Fusce non augue sit amet erat imperdiet elementum. Pellentesque facilisis, neque sit amet fermentum lobortis, nisi ipsum interdum tellus, a semper ante ante sed sapien. Fusce convallis auctor eros, at tempus erat consequat non. Duis bibendum enim id quam tristique porttitor. Sed arcu tortor, tincidunt ut iaculis a, pharetra suscipit diam. Mauris pharetra, nulla in fermentum faucibus, ipsum elit vulputate elit, sed tempor turpis elit non magna. Ut id suscipit leo. Nulla velit leo, pulvinar in ultrices eu, sollicitudin at nibh. Ut suscipit placerat justo, nec eleifend sem feugiat ac. Pellentesque venenatis nisl egestas urna fermentum interdum. Proin massa purus, tristique a iaculis quis, aliquet vitae diam.</p>
+<p>Morbi dolor tellus, mollis non consectetur at, fermentum non elit. In suscipit augue a eros convallis sit amet sollicitudin metus viverra. Quisque dapibus, neque ut lacinia adipiscing, nisi dui lobortis ipsum, euismod aliquam arcu odio ac diam. Curabitur vestibulum nunc a nulla iaculis vitae cursus sapien gravida. Nulla vestibulum facilisis mauris, id egestas tortor fringilla eu. Nulla iaculis odio in mauris vestibulum vel rhoncus ante placerat. Etiam euismod turpis quis orci volutpat at tincidunt felis placerat. In eget lacus risus. Aliquam pharetra risus a diam dictum molestie. Pellentesque odio erat, vestibulum sed tristique sit amet, posuere vel eros.</p>
+<hr>
+<p class="especial">Morbi dolor mollis non consectetur at, fermentum non elit. In suscipit augue a eros convallis sit amet sollicitudin metus viverra.</p>
+<div class="especial">Quisque dapibus, neque ut lacinia adipiscing, nisi dui lobortis ipsum, euismod aliquam arcu odio ac diam.</div>
+<p>Aliquam pharetra risus a diam dictum molestie. Pellentesque odio <a href="erathtml" class="especial">erat</a>, vestibulum sed tristique sit amet, posuere vel eros.</p>
+<hr>
+<p class="realce">Nulla velit leo, pulvinar in ultrices eu, sollicitudin at nibh.</p>
+<p class="amarelo">Nulla velit leo, pulvinar in ultrices eu, sollicitudin at nibh.</p>
+<p class="realce amarelo">Nulla velit leo, pulvinar in ultrices eu, sollicitudin at nibh.</p>
+<hr>
+<h2 id="titulo" class="realce">Titulo</h2>
+<hr>
+<div id="container">
+    <ul>
+        <li>Política</li>
+        <li>Internacional</li>
+        <li>Desporto</li>
+        <li>Cultura</li>
+        <li>Ciência</li>
+    </ul>
+</div>
+</body>
+</html>

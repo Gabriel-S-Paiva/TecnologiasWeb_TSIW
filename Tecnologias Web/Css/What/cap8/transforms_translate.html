@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transforms - translate</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	width: 150px;
+	height: 150px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#exemplo1, #exemplo2 {
+	float:left;
+	margin-right: 100px;
+}
+#exemplo1_1, #exemplo2_1 {
+	position:absolute;
+	background-color: #fff;
+	border: 1px dotted #000;
+	color: #000;
+}
+#exemplo1_2 {
+	border: 1px solid #000;
+	background-color: #00f;
+	color: #fff;
+	-webkit-transform: translate(50px, 35px);
+	-moz-transform: translate(50px, 35px);
+	-ms-transform: translate(50px, 35px);
+	-o-transform: translate(50px, 35px);
+	transform: translate(50px, 35px);
+}
+#exemplo2_2 {
+	border: 1px solid #000;
+	background-color: #00f;
+	color: #fff;
+	-webkit-transform: translateX(100px);
+	-moz-transform: translateX(100px);
+	-ms-transform: translateX(100px);
+	-o-transform: translateX(100px);
+	transform: translateX(100px);
+}
+</style>
+</head>
+
+<body>
+<h1>Transforms - translate</h1>
+<div id="exemplo1">
+	<div id="exemplo1_1">Exemplo 1 - original</div>
+	<div id="exemplo1_2">Exemplo 2 - translate(50px, 35px)</div>
+</div>
+<div id="exemplo2">
+	<div id="exemplo2_1">Exemplo 1 - original</div>
+	<div id="exemplo2_2">Exemplo 3 - translateX(100px)</div>
+</div>
+</body>
+</html>

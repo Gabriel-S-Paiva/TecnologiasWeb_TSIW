@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transforms - scale</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	float: left;
+	margin-top: 50px;
+	margin-right: 40px;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #000;
+	background-color: #00f;
+	color: #fff;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+#exemplo2 {
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	-o-transform: scale(2);
+	transform: scale(2);
+}
+#exemplo3 {
+	-webkit-transform: scale(2, 0.5);
+	-moz-transform: scale(2, 0.5);
+	-ms-transform: scale(2, 0.5);
+	-o-transform: scale(2, 0.5);
+	transform: scale(2, 0.5);
+}
+#exemplo4 {
+	-webkit-transform: scale(-1);
+	-moz-transform: scale(-1);
+	-ms-transform: scale(-1);
+	-o-transform: scale(-1);
+	transform: scale(-1);
+}
+#exemplo5 {
+	-webkit-transform: scaleY(-1);
+	-moz-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	transform: scaleY(-1);
+}
+</style>
+</head>
+
+<body>
+<h1>Transforms - scale</h1>
+<div id="exemplo1">Exemplo 1 - original</div>
+<div id="exemplo2">Exemplo 2 - scale(2)</div>
+<div id="exemplo3">Exemplo 3 - scale(2, 0.5)</div>
+<div id="exemplo4">Exemplo 4 - scale(-1)</div>
+<div id="exemplo5">Exemplo 5 - scaleY(-1)</div>
+</body>
+</html>

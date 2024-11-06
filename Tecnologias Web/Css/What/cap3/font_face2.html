@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Propriedade font-face</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+@font-face {
+	font-family: 'Ostrich Sans Black';
+	src: local('Ostrich Sans Black'), url('ostrich-black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ostrich Sans Bold';
+	src: local('Ostrich Sans Bold'), url('ostrich-bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ostrich Sans Dashed Medium';
+	src: local('Ostrich Sans Dashed Medium'), url('ostrich-dashed.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ostrich Sans Light';
+	src: local('Ostrich Sans Light'), url('ostrich-light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ostrich Sans Medium';
+	src: local('Ostrich Sans Medium'), url('ostrich-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ostrich Sans Rounded Medium';
+	src: local('Ostrich Sans Rounded Medium'), url('ostrich-rounded.ttf') format('truetype');
+}
+p {
+	margin: 0;
+	font-size: 4em;
+}
+#ostrich_black {
+	font-family: 'Ostrich Sans Black';
+}
+#ostrich_bold {
+	font-family: 'Ostrich Sans Bold';
+}
+#ostrich_dash {
+	font-family: 'Ostrich Sans Dashed Medium';
+}
+#ostrich_light {
+	font-family: 'Ostrich Sans Light';
+}
+#ostrich_medium {
+	font-family: 'Ostrich Sans Medium';
+}
+#ostrich_rounded {
+	font-family: 'Ostrich Sans Rounded Medium';
+}
+</style>
+</head>
+<body>
+<h1>@font-face - diferentes font-faces</h1>
+<p id="ostrich_black">Ostrich Sans Black</p>
+<p id="ostrich_bold">Ostrich Sans Bold</p>
+<p id="ostrich_dash">Ostrich Sans Dashed Medium</p>
+<p id="ostrich_light">Ostrich Sans Light</p>
+<p id="ostrich_medium">Ostrich Sans Medium</p>
+<p id="ostrich_rounded">Ostrich Sans Rounded Medium</p>
+</body>
+</html>

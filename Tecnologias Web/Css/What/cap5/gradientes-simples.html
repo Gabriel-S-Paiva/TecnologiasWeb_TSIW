@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Gradiente simples</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#gradiente1 {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000000;
+	margin-right: 20px;
+	float: left;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f09), to(black));
+	background-image: -webkit-linear-gradient(#f09,black);
+	background-image: -moz-linear-gradient(#f09,black);
+	background-image: -o-linear-gradient(#f09,black);
+	background-image: -ms-linear-gradient(#f09,black);		
+	background-image: linear-gradient(#f09,black);
+}
+</style>
+</head>
+<body>
+<h1>Gradiente linear simples</h1>
+<div id="gradiente1"></div>
+</body>
+</html>

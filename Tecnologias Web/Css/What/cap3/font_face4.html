@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Propriedade font-face</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+p {
+	margin: 0;
+	font-size: 4em;
+}
+@font-face {
+	font-family: 'Ostrich Sans Medium';
+	src: local('Ostrich Sans Medium'), url('ostrich-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ostrich Sans Bold';
+	src: local('Ostrich Sans Bold'), url('ostrich-bold.ttf') format('truetype');
+}
+p.ostrich {
+	font-family: 'Ostrich Sans Medium', sans-serif;
+}
+p.ostrich_bold {
+	font-family: 'Ostrich Sans Bold', sans-serif;
+}
+</style>
+</head>
+<body>
+<h1>@font-face - bold</h1>
+<p class="ostrich">Ostrich Sans Medium</p>
+<p class="ostrich_bold">Ostrich Sans Bold</p>
+<p class="ostrich">Ostrich Sans <strong>Bold<strong></p>
+</body>
+</html>

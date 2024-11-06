@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Border-image - exemplo2 - separadores</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+.separadores {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #666;
+	float: left;
+	margin-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-width: 6px 5px 5px 5px; 
+	border-style: solid;
+	border-color: #ccc;
+	-webkit-border-image: url("tabs.png") 6 5 5 5 stretch;
+	-moz-border-image: url("tabs.png") 6 5 5 5 stretch;
+	-o-border-image: url("tabs.png") 6 5 5 5 stretch;
+	border-image: url("tabs.png") 6 5 5 5 stretch;
+}
+</style>
+</head>
+
+<body>
+<h1>Border-image - exemplo2 - separadores</h1>
+<div id="tab1" class="separadores">Home</div>
+<div id="tab2" class="separadores">Investing</div>
+<div id="tab3" class="separadores">News</div>
+<div id="tab4" class="separadores">Personal Finance</div>
+<div id="tab5" class="separadores">My Portfolios</div>
+</body>
+</html>

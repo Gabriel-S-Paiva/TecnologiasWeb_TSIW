@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Opacidade</title>
+<style>
+body {
+	background-color: red;
+}
+h1 {
+	border-bottom: 1px solid #000;
+}
+#opacidade1 {
+	width: 150px;
+	height: 150px;	
+	background-color: yellow;
+	filter: alpha(opacity:100);
+	opacity: 1.0;
+}
+#opacidade2 {
+	width: 150px;
+	height: 150px;	
+	background-color: yellow;
+	filter: alpha(opacity:50);	
+	opacity: 0.5;
+}
+#rollover img {
+	filter: alpha(opacity:50);
+	opacity: 0.5;
+}
+#rollover img:hover {
+	filter: alpha(opacity:100);
+	opacity: 1.0;
+}
+#opacidade_rgba {
+	width: 150px;
+	height: 150px;
+	background: rgb(100%,100%,0%);
+	background: rgba(100%,100%,0%,0.5);
+}
+#opacidade_ie {
+	width: 150px;
+	height: 150px;
+	background: rgba(100%,100%,0%,0.5);	
+}
+</style>
+<!--[if lt IE 9]>
+<style type="text/css">
+#opacidade_ie {
+       background: transparent;
+       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80ffff00,endColorstr=#80ffff00);
+       zoom: 1;
+} 
+</style>
+<![endif]-->
+</head>
+
+<body>
+<h1>Opacidade</h1>
+<h2>Opacidade=1.0 - cor de fundo=yellow</h2>
+<div id="opacidade1">Exemplo 1</div>
+<h2>Opacidade=0.2 - cor de fundo=yellow</h2>
+<div id="opacidade2">Exemplo 2</div>
+<h2>Image rollover</h2>
+<div id="rollover">
+	<img src="smiley1.png">
+	<img src="smiley2.png">
+	<img src="smiley3.png">
+</div>
+<h2>rgba(100%,100%,0%,0.2) com fallback para browsers que não suportam RGBA e HSLA</h2>
+<div id="opacidade_rgba">Exemplo 3</div>
+<h2>Suporte do Internet Explorer utilizando filtros</h2>
+<div id="opacidade_ie">Exemplo 4</div>
+</body>
+</html>

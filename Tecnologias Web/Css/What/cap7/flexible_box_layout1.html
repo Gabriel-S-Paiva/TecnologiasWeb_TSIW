@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Flexible Box Layout</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+#parente {
+	width: 600px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: box;
+	border: 1px solid #000;
+}
+.filhos {
+	padding: 10px;
+	border: 1px solid #ccc;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-box-flex: 1;		
+	box-flex: 1;
+}
+</style>
+</head>
+
+<body>
+<h1>Flexible Box Layout</h1>
+<div id="parente">
+	<div id="filho1" class="filhos"><p>Domingos José Correia Botelho de Mesquita e Meneses, fidalgo de linhagem e um dos mais antigos solarengos de Vila-Real de Trás-os-Montes, era em 1779, juiz de fora de Cascais, e nesse mesmo ano casara com uma dama do paço, D. Rita Teresa Margarida Preciosa da Veiga Caldeirão Castelo Branco, filha dum capitão de cavalos, neta de outro Antônio de AzevedoCastelo Branco Pereira da Silva, tem notável por sua jerarquia, como por um, naquele tempo, precioso livro acerca da Arte de Guerra.</p></div>
+	<div id="filho2" class="filhos"><p>Domingos Botelho devia ter uma vocação qualquer, e tinha: era excelente flautista; foi a primeira flauta do seu tempo; e a tocar flauta se sustentou dois anos em Coimbra, durante os quais seu pai lhe suspendeu as mesadas, porque os rendimentos da casa não bastavam a livrar outro filho de um crime de morte.</p></div>
+</div>
+</body>
+</html>

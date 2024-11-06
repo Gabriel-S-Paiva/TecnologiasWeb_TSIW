@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Propriedade background-clip</title>
+<style>
+h1 {
+	border-bottom: 1px solid #000;
+}
+div {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+#clip1 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px dotted #444444;
+	background-image: url(background2.png);
+	background-color: #afcc72;
+}
+#clip2 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px dotted #444444;
+	background-image: url(background2.png);
+	background-color: #afcc72;
+	background-repeat: repeat;
+	-webkit-background-clip: border;	
+	-webkit-background-clip: border-box;
+	-moz-background-clip: border;	
+	background-clip: border-box;
+}
+#clip3 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px dotted #444444;
+	background-image: url(background2.png);
+	background-color: #afcc72;
+	background-repeat: repeat;
+	-webkit-background-clip: padding;	
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+#clip4 {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border: 10px dotted #444444;
+	background-image: url(background2.png);
+	background-color: #afcc72;
+	background-repeat: repeat;
+	-webkit-background-clip: content-box;		
+	-moz-background-clip: content-box;	
+	background-clip: content-box;
+}
+#div1 {
+	background-color: #ccc;
+}
+#clip5 {
+	margin:0px;
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+#div2 {
+	background-color: #ccc;	
+}
+#clip6 {
+	margin:0px;
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background-repeat: repeat;
+	background-image: url(background2.png);	
+	background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+</style>
+</head>
+<body>
+<h1>Propriedade background-clip</h1>
+<h2>Sem background-clip</h2>
+<div id="clip1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-clip: border-box;</h2>
+<div id="clip2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-clip: padding-box</h2>
+<div id="clip3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-clip: content-box</h2>
+<div id="clip4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<h2>background-clip: text</h2>
+<div id="div1">
+<p id="clip5">Inset</p>
+</div>
+<h2>background-clip: text</h2>
+<div id="div2">
+<p id="clip6">Máscara</p>
+</div>
+</body>
+</html>
